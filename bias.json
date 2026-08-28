@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-08-28T10:01:27.375181+00:00",
+  "generated_at": "2026-08-28T10:15:40.831163+00:00",
   "sentiment": {
-    "score": 0.339,
+    "score": 0.324,
     "label": "Risk-On",
     "lean": "long",
     "conviction": "High",
-    "agree": 4,
-    "total": 4,
+    "agree": 5,
+    "total": 5,
     "layers": [
       {
         "name": "price",
-        "score": 0.161,
+        "score": 0.16,
         "agrees": true
       },
       {
@@ -30,13 +30,18 @@
       },
       {
         "name": "barometer",
-        "score": 0.0,
-        "agrees": false
+        "score": 0.2,
+        "agrees": true
       },
       {
         "name": "volatility",
         "score": 0.266,
         "agrees": true
+      },
+      {
+        "name": "news",
+        "score": -0.097,
+        "agrees": false
       }
     ],
     "exposure": "Benefits most: NQ and RTY (high beta lead the way up). YM lags. For your MNQ vs MES: MNQ has more upside \u2014 but also more whip."
@@ -48,7 +53,8 @@
     "driver": "Biggest driver right now: the yield curve \u2014 the main support.",
     "conflict": null,
     "calendar_note": null,
-    "sector_note": "Money is flowing into offensive sectors (tech, discretionary) \u2014 healthy risk-on participation."
+    "sector_note": "Money is flowing into offensive sectors (tech, discretionary) \u2014 healthy risk-on participation.",
+    "news_note": null
   },
   "macro": {
     "enabled": true,
@@ -178,13 +184,13 @@
       {
         "symbol": "^VIX",
         "name": "VIX (fear)",
-        "day_pct": -0.14,
-        "signal": "neutral"
+        "day_pct": -0.21,
+        "signal": "risk-on"
       },
       {
         "symbol": "CL=F",
         "name": "Crude Oil",
-        "day_pct": -0.53,
+        "day_pct": -0.73,
         "signal": "slowing"
       }
     ],
@@ -210,11 +216,11 @@
       "ES": {
         "prior_high": 7755.5,
         "prior_low": 7702.75,
-        "prior_close": 7741.25,
+        "prior_close": 7741.0,
         "overnight_high": 7747.5,
         "overnight_low": 7727.25,
         "open": null,
-        "last": 7739.75,
+        "last": 7738.75,
         "gap_pts": null,
         "gap_pct": null,
         "open_location": null,
@@ -224,24 +230,86 @@
       "NQ": {
         "prior_high": 29704.5,
         "prior_low": 29423.75,
-        "prior_close": 29692.0,
-        "overnight_high": 29703.0,
+        "prior_close": 29691.75,
+        "overnight_high": 29707.0,
         "overnight_low": 29578.25,
         "open": null,
-        "last": 29613.75,
+        "last": 29602.25,
         "gap_pts": null,
         "gap_pct": null,
         "open_location": null,
         "vwap": null,
-        "note": "NQ: overnight range 29578.25-29703.0 so far; RTH hasn't opened yet, so the gap and open-location read fills in once the 9:30 bell sets the day's tone."
+        "note": "NQ: overnight range 29578.25-29707.0 so far; RTH hasn't opened yet, so the gap and open-location read fills in once the 9:30 bell sets the day's tone."
       }
     }
   },
   "news": {
-    "enabled": false,
-    "note": "fetch failed: HTTPSConnectionPool(host='api.marketaux.com', port=443): Read timed out. (read timeout=20)",
-    "items": [],
-    "net_lean": null
+    "enabled": true,
+    "items": [
+      {
+        "title": "Trump used to say he saw a quick end to his Iran war. Six months later, he claims he's in no hurry",
+        "source": "economictimes.indiatimes.com",
+        "published_at": "2026-08-28T04:28:05.000000Z",
+        "url": "https://economictimes.indiatimes.com/news/international/world-news/trump-used-to-say-he-saw-a-quick-end-to-his-iran-war-six-months-later-he-claims-hes-in-no-hurry/articleshow/133583073.cms",
+        "category": "geopolitical",
+        "direction": "risk-off",
+        "score": -0.4,
+        "why": "Prolonged conflict drains military, economic uncertainty"
+      },
+      {
+        "title": "Trump Administration Eyes Venezuelan Oil Stake Amid Global Energy Shifts",
+        "source": "thestockmarketwatch.com",
+        "published_at": "2026-08-27T18:08:11.000000Z",
+        "url": "https://www2.stockmarketwatch.com/stock-market-news/trump-administration-eyes-venezuelan-oil-stake-amid-global-energy-shifts/70996/",
+        "category": "energy",
+        "direction": "risk-on",
+        "score": 0.3,
+        "why": "US energy security, reduced Venezuela geopolitical risk"
+      },
+      {
+        "title": "Oil down $2 on Iran-Oman talks to reopen Strait of Hormuz",
+        "source": "rte.ie",
+        "published_at": "2026-08-26T07:45:05.000000Z",
+        "url": "https://www.rte.ie/news/business/2026/0826/1589258-world-oil-prices/",
+        "category": "energy",
+        "direction": "risk-on",
+        "score": 0.5,
+        "why": "De-escalation talks, Hormuz reopens, oil supply relief"
+      },
+      {
+        "title": "Trump's Operation Economic Outcast: How could Iran sanctions impact India?",
+        "source": "business-standard.com",
+        "published_at": "2026-08-26T06:58:59.000000Z",
+        "url": "https://www.business-standard.com/economy/news/trump-operation-economic-outcast-us-iran-sanctions-india-impact-crude-oil-126082600404_1.html",
+        "category": "trade",
+        "direction": "risk-off",
+        "score": -0.3,
+        "why": "Higher oil prices, trade disruptions hurt growth"
+      },
+      {
+        "title": "Six months into Iran war, almost half of global oil flows from war zones",
+        "source": "economictimes.indiatimes.com",
+        "published_at": "2026-08-26T04:35:38.000000Z",
+        "url": "https://economictimes.indiatimes.com/news/international/world-news/six-months-into-iran-war-almost-half-of-global-oil-flows-from-war-zones/articleshow/133529519.cms",
+        "category": "energy",
+        "direction": "risk-off",
+        "score": -0.6,
+        "why": "Half global oil from war zones, severe supply crisis"
+      },
+      {
+        "title": "Iran war news LIVE: Iran's Ghalibaf targets US Treasury Secretary Bessent over 'Economic D-Day' sanctions",
+        "source": "livemint.com",
+        "published_at": "2026-08-26T00:16:46.000000Z",
+        "url": "https://www.livemint.com/news/us-news/us-iran-war-news-live-latest-updates-donald-trump-strait-of-hormuz-economic-sanctions-oil-prices-abbas-araghchi-ghalibaf-11787701189998.html",
+        "category": "geopolitical",
+        "direction": "risk-off",
+        "score": -0.2,
+        "why": "Escalating rhetoric, economic sanctions intensify tensions"
+      }
+    ],
+    "net_lean": -0.097,
+    "mode": "AI",
+    "_fetched_at": "2026-08-28T10:15:40.831046+00:00"
   },
   "megacap_breadth": 0.086,
   "instruments": [
@@ -289,15 +357,15 @@
       "symbol": "NQ",
       "name": "Nasdaq-100 (E-mini)",
       "type": "index",
-      "technical": 0.07,
+      "technical": 0.065,
       "macro": 0.567,
       "macro_weight": 0.4,
-      "composite": 0.269,
+      "composite": 0.266,
       "bias": "Neutral",
       "drivers": {
-        "trend": 0.18,
-        "day": -0.187,
-        "day_change_pct": -0.28,
+        "trend": 0.178,
+        "day": -0.196,
+        "day_change_pct": -0.29,
         "spark": [
           30096.0,
           29586.0,
@@ -308,20 +376,20 @@
           29276.75,
           29289.5,
           29695.75,
-          29612.25
+          29608.25
         ],
         "trend_components": {
-          "price_vs_ema20": 0.266,
+          "price_vs_ema20": 0.26,
           "ema20_vs_ema50": 0.285,
           "ema50_slope": 0.212,
-          "rsi": -0.12
+          "rsi": -0.123
         },
         "_raw": {
-          "price": 29612.25,
+          "price": 29608.25,
           "prev_close": 29695.75,
-          "ema20": 29455.27,
-          "ema50": 29288.36,
-          "rsi14": 47.6
+          "ema20": 29454.89,
+          "ema50": 29288.2,
+          "rsi14": 47.5
         }
       }
     },
@@ -329,15 +397,15 @@
       "symbol": "YM",
       "name": "Dow (E-mini)",
       "type": "index",
-      "technical": 0.197,
+      "technical": 0.191,
       "macro": 0.567,
       "macro_weight": 0.4,
-      "composite": 0.345,
+      "composite": 0.341,
       "bias": "Bullish",
       "drivers": {
-        "trend": 0.247,
-        "day": 0.081,
-        "day_change_pct": 0.12,
+        "trend": 0.243,
+        "day": 0.071,
+        "day_change_pct": 0.11,
         "spark": [
           53544.0,
           53403.0,
@@ -348,20 +416,20 @@
           53645.0,
           53521.0,
           53621.0,
-          53686.0
+          53678.0
         ],
         "trend_components": {
-          "price_vs_ema20": 0.217,
-          "ema20_vs_ema50": 0.599,
+          "price_vs_ema20": 0.21,
+          "ema20_vs_ema50": 0.598,
           "ema50_slope": 0.408,
-          "rsi": -0.352
+          "rsi": -0.36
         },
         "_raw": {
-          "price": 53686.0,
+          "price": 53678.0,
           "prev_close": 53621.0,
-          "ema20": 53453.98,
-          "ema50": 52821.49,
-          "rsi14": 43.0
+          "ema20": 53453.22,
+          "ema50": 52821.18,
+          "rsi14": 42.8
         }
       }
     },
@@ -369,15 +437,15 @@
       "symbol": "RTY",
       "name": "Russell 2000 (E-mini)",
       "type": "index",
-      "technical": 0.169,
+      "technical": 0.176,
       "macro": 0.567,
       "macro_weight": 0.4,
-      "composite": 0.328,
-      "bias": "Neutral",
+      "composite": 0.332,
+      "bias": "Bullish",
       "drivers": {
-        "trend": 0.234,
-        "day": 0.018,
-        "day_change_pct": 0.03,
+        "trend": 0.238,
+        "day": 0.031,
+        "day_change_pct": 0.05,
         "spark": [
           3064.9,
           3026.4,
@@ -388,20 +456,20 @@
           3014.4,
           3010.1,
           3019.0,
-          3019.8
+          3020.4
         ],
         "trend_components": {
-          "price_vs_ema20": 0.05,
-          "ema20_vs_ema50": 0.53,
-          "ema50_slope": 0.392,
-          "rsi": -0.058
+          "price_vs_ema20": 0.059,
+          "ema20_vs_ema50": 0.531,
+          "ema50_slope": 0.393,
+          "rsi": -0.051
         },
         "_raw": {
-          "price": 3019.8,
+          "price": 3020.4,
           "prev_close": 3019.0,
-          "ema20": 3016.81,
-          "ema50": 2985.15,
-          "rsi14": 48.8
+          "ema20": 3016.86,
+          "ema50": 2985.18,
+          "rsi14": 49.0
         }
       }
     },
@@ -929,15 +997,15 @@
       "symbol": "BTC",
       "name": "Bitcoin",
       "type": "crypto",
-      "technical": 0.46,
+      "technical": 0.444,
       "macro": 0.567,
       "macro_weight": 0.2,
-      "composite": 0.481,
+      "composite": 0.469,
       "bias": "Bullish",
       "drivers": {
         "trend": 1.0,
-        "day": -0.799,
-        "day_change_pct": -1.2,
+        "day": -0.855,
+        "day_change_pct": -1.28,
         "spark": [
           69266.19,
           73032.76,
@@ -948,7 +1016,7 @@
           78564.98,
           79027.42,
           80257.54,
-          79295.08
+          79228.78
         ],
         "trend_components": {
           "price_vs_ema20": 1.0,
@@ -957,11 +1025,11 @@
           "rsi": 1.0
         },
         "_raw": {
-          "price": 79295.08,
+          "price": 79228.78,
           "prev_close": 80257.54,
-          "ema20": 72716.02,
-          "ema50": 68642.24,
-          "rsi14": 87.2
+          "ema20": 72709.7,
+          "ema50": 68639.64,
+          "rsi14": 86.9
         }
       }
     },
@@ -976,7 +1044,7 @@
       "bias": "Bullish",
       "drivers": {
         "trend": 0.708,
-        "day": 0.424,
+        "day": 0.423,
         "day_change_pct": 0.64,
         "spark": [
           26338.61,
@@ -988,19 +1056,19 @@
           26266.14,
           26285.96,
           26367.24,
-          26534.99
+          26534.72
         ],
         "trend_components": {
-          "price_vs_ema20": 0.792,
+          "price_vs_ema20": 0.791,
           "ema20_vs_ema50": 0.859,
           "ema50_slope": 0.716,
-          "rsi": 0.386
+          "rsi": 0.385
         },
         "_raw": {
-          "price": 26534.99,
+          "price": 26534.72,
           "prev_close": 26367.24,
-          "ema20": 26121.46,
-          "ema50": 25680.12,
+          "ema20": 26121.43,
+          "ema50": 25680.11,
           "rsi14": 57.7
         }
       }
@@ -1049,15 +1117,15 @@
       "symbol": "FTSE",
       "name": "FTSE \u00b7 UK",
       "type": "intl",
-      "technical": 0.152,
+      "technical": 0.151,
       "macro": 0.567,
       "macro_weight": 0.4,
-      "composite": 0.318,
+      "composite": 0.317,
       "bias": "Neutral",
       "drivers": {
         "trend": 0.152,
-        "day": 0.15,
-        "day_change_pct": 0.23,
+        "day": 0.149,
+        "day_change_pct": 0.22,
         "spark": [
           10720.3,
           10728.0,
@@ -1068,19 +1136,19 @@
           10886.2,
           10878.1,
           10792.5,
-          10816.81
+          10816.61
         ],
         "trend_components": {
-          "price_vs_ema20": 0.082,
+          "price_vs_ema20": 0.081,
           "ema20_vs_ema50": 0.429,
           "ema50_slope": 0.295,
-          "rsi": -0.268
+          "rsi": -0.269
         },
         "_raw": {
-          "price": 10816.81,
+          "price": 10816.61,
           "prev_close": 10792.5,
-          "ema20": 10799.08,
-          "ema50": 10707.19,
+          "ema20": 10799.07,
+          "ema50": 10707.18,
           "rsi14": 44.6
         }
       }
