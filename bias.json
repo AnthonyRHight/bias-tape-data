@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-09-04T21:01:20.043975+00:00",
+  "generated_at": "2026-09-04T21:16:11.526893+00:00",
   "sentiment": {
-    "score": 0.152,
+    "score": 0.122,
     "label": "Risk-On",
     "lean": "long",
-    "conviction": "High",
+    "conviction": "Moderate",
     "agree": 4,
-    "total": 5,
+    "total": 6,
     "layers": [
       {
         "name": "price",
-        "score": -0.033,
+        "score": -0.034,
         "agrees": false
       },
       {
@@ -42,6 +42,11 @@
         "name": "calendar",
         "score": 0.367,
         "agrees": true
+      },
+      {
+        "name": "news",
+        "score": -0.264,
+        "agrees": false
       }
     ],
     "exposure": "Benefits most: NQ and RTY (high beta lead the way up). YM lags. For your MNQ vs MES: MNQ has more upside \u2014 but also more whip."
@@ -53,7 +58,8 @@
     "driver": "Biggest driver right now: the yield curve \u2014 the main support.",
     "conflict": null,
     "calendar_note": "Recent data surprised risk-on (long) \u2014 that's part of today's tilt.",
-    "sector_note": null
+    "sector_note": null,
+    "news_note": null
   },
   "macro": {
     "enabled": true,
@@ -94,7 +100,7 @@
         "impact": "Major",
         "forecast": "0.3",
         "previous": "0",
-        "minutes_until": 8129,
+        "minutes_until": 8113,
         "beat_is": null,
         "watch": "Not in the scored set \u2014 informational only."
       },
@@ -104,7 +110,7 @@
         "impact": "Major",
         "forecast": "4030000.00",
         "previous": "4060000.00",
-        "minutes_until": 8219,
+        "minutes_until": 8203,
         "beat_is": null,
         "watch": "Not in the scored set \u2014 informational only."
       },
@@ -114,7 +120,7 @@
         "impact": "Major",
         "forecast": "0.2",
         "previous": "0.2",
-        "minutes_until": 9569,
+        "minutes_until": 9553,
         "beat_is": null,
         "watch": "Not in the scored set \u2014 informational only."
       },
@@ -124,7 +130,7 @@
         "impact": "Major",
         "forecast": null,
         "previous": "2.5",
-        "minutes_until": 9569,
+        "minutes_until": 9553,
         "beat_is": null,
         "watch": "Not in the scored set \u2014 informational only."
       },
@@ -134,7 +140,7 @@
         "impact": "Major",
         "forecast": "0.4",
         "previous": "0.1",
-        "minutes_until": 9569,
+        "minutes_until": 9553,
         "beat_is": null,
         "watch": "Not in the scored set \u2014 informational only."
       },
@@ -144,7 +150,7 @@
         "impact": "Major",
         "forecast": null,
         "previous": "3.4",
-        "minutes_until": 9569,
+        "minutes_until": 9553,
         "beat_is": null,
         "watch": "Not in the scored set \u2014 informational only."
       },
@@ -154,7 +160,7 @@
         "impact": "Major",
         "forecast": null,
         "previous": "51.7",
-        "minutes_until": 9659,
+        "minutes_until": 9643,
         "beat_is": "risk-on",
         "miss_is": "risk-off",
         "consensus_lean": "neutral",
@@ -213,7 +219,7 @@
         "direction": "risk-off"
       }
     ],
-    "_fetched_at": "2026-09-04T21:00:49.972085+00:00"
+    "_fetched_at": "2026-09-04T21:16:00.210279+00:00"
   },
   "market_state": {
     "enabled": true,
@@ -289,13 +295,13 @@
       {
         "symbol": "DX-Y.NYB",
         "name": "US Dollar",
-        "day_pct": 0.17,
+        "day_pct": 0.16,
         "signal": "risk-off"
       },
       {
         "symbol": "GC=F",
         "name": "Gold",
-        "day_pct": -0.35,
+        "day_pct": -0.32,
         "signal": "risk-on"
       },
       {
@@ -313,7 +319,7 @@
       {
         "symbol": "CL=F",
         "name": "Crude Oil",
-        "day_pct": -0.13,
+        "day_pct": -0.09,
         "signal": "neutral"
       }
     ],
@@ -357,7 +363,7 @@
         "overnight_high": 29704.5,
         "overnight_low": 29482.0,
         "open": 29588.75,
-        "last": 29526.0,
+        "last": 29523.0,
         "gap_pts": 58.0,
         "gap_pct": 0.2,
         "open_location": "inside",
@@ -367,10 +373,72 @@
     }
   },
   "news": {
-    "enabled": false,
-    "note": "fetch failed: HTTPSConnectionPool(host='api.marketaux.com', port=443): Read timed out. (read timeout=20)",
-    "items": [],
-    "net_lean": null
+    "enabled": true,
+    "items": [
+      {
+        "title": "Breather for India? Trump\u2019s Russia sanctions bill may be stalled for now; could have led to 100% tariffs",
+        "source": "timesofindia.indiatimes.com",
+        "published_at": "2026-09-04T15:36:53.000000Z",
+        "url": "https://timesofindia.indiatimes.com/business/india-business/breather-for-india-trumps-russia-sanctions-bill-may-be-stalled-for-now-could-have-led-to-100-tariffs/articleshow/133768779.cms",
+        "category": "political",
+        "direction": "risk-on",
+        "score": 0.3,
+        "why": "Tariff bill delay reduces immediate trade escalation risk"
+      },
+      {
+        "title": "Oil may top $100 as Hormuz, Russia risks persist: Mirae Asset Sharekhan",
+        "source": "business-standard.com",
+        "published_at": "2026-09-04T07:35:51.000000Z",
+        "url": "https://www.business-standard.com/markets/commodities/oil-may-top-100-as-hormuz-russia-risks-persist-mirae-asset-sharekhan-126090400492_1.html",
+        "category": "energy",
+        "direction": "risk-off",
+        "score": -0.4,
+        "why": "Oil deficit outlook pressures margins, stagflation risk"
+      },
+      {
+        "title": "Trump doubles down on sanctions, military pressure as Iran refuses to yield",
+        "source": "economictimes.indiatimes.com",
+        "published_at": "2026-09-04T01:36:50.000000Z",
+        "url": "https://economictimes.indiatimes.com/news/international/world-news/trump-doubles-down-on-sanctions-military-pressure-as-iran-refuses-to-yield/articleshow/133749280.cms",
+        "category": "geopolitical",
+        "direction": "risk-off",
+        "score": -0.6,
+        "why": "Escalating Iran sanctions, Hormuz risk, supply disruption"
+      },
+      {
+        "title": "Trump wants Strait of Hormuz renamed 'Trump Strait' amid US-Iran war",
+        "source": "business-standard.com",
+        "published_at": "2026-09-03T04:17:52.000000Z",
+        "url": "https://www.business-standard.com/world-news/trump-strait-of-hormuz-rename-us-iran-war-west-asia-conflict-oil-shipping-126090300162_1.html",
+        "category": "geopolitical",
+        "direction": "risk-off",
+        "score": -0.5,
+        "why": "Active US-Iran military escalation signals prolonged conflict"
+      },
+      {
+        "title": "Fears of an Extended US-Iran Conflict Boost Crude Oil Prices",
+        "source": "finance.yahoo.com",
+        "published_at": "2026-09-02T15:39:00.000000Z",
+        "url": "https://finance.yahoo.com/energy/articles/fears-extended-us-iran-conflict-153900010.html",
+        "category": "energy",
+        "direction": "risk-off",
+        "score": -0.5,
+        "why": "Escalating hostilities threaten oil supply, boost prices"
+      },
+      {
+        "title": "OPEC+ likely to keep oil output policy unchanged on Sunday, sources say",
+        "source": "finance.yahoo.com",
+        "published_at": "2026-09-02T14:09:07.000000Z",
+        "url": "https://finance.yahoo.com/energy/articles/opec-likely-keep-oil-output-140907521.html",
+        "category": "energy",
+        "direction": "neutral",
+        "score": 0.0,
+        "why": "Status quo policy maintains current market equilibrium"
+      }
+    ],
+    "net_lean": -0.264,
+    "mode": "AI",
+    "_fetched_at": "2026-09-04T21:16:11.526751+00:00"
   },
   "megacap_breadth": 0.184,
   "instruments": [
@@ -378,15 +446,15 @@
       "symbol": "ES",
       "name": "S&P 500 (E-mini)",
       "type": "index",
-      "technical": 0.033,
+      "technical": 0.034,
       "macro": 0.462,
       "macro_weight": 0.4,
       "composite": 0.205,
       "bias": "Neutral",
       "drivers": {
         "trend": 0.195,
-        "day": -0.344,
-        "day_change_pct": -0.52,
+        "day": -0.342,
+        "day_change_pct": -0.51,
         "spark": [
           7669.75,
           7692.0,
@@ -397,19 +465,19 @@
           7642.75,
           7676.5,
           7754.75,
-          7714.75
+          7715.0
         ],
         "trend_components": {
-          "price_vs_ema20": 0.124,
+          "price_vs_ema20": 0.126,
           "ema20_vs_ema50": 0.491,
-          "ema50_slope": 0.348,
-          "rsi": -0.262
+          "ema50_slope": 0.349,
+          "rsi": -0.261
         },
         "_raw": {
-          "price": 7714.75,
+          "price": 7715.0,
           "prev_close": 7754.75,
-          "ema20": 7695.64,
-          "ema50": 7620.75,
+          "ema20": 7695.66,
+          "ema50": 7620.76,
           "rsi14": 44.8
         }
       }
@@ -418,15 +486,15 @@
       "symbol": "NQ",
       "name": "Nasdaq-100 (E-mini)",
       "type": "index",
-      "technical": 0.017,
+      "technical": 0.014,
       "macro": 0.462,
       "macro_weight": 0.4,
-      "composite": 0.195,
+      "composite": 0.193,
       "bias": "Neutral",
       "drivers": {
-        "trend": 0.023,
-        "day": 0.002,
-        "day_change_pct": 0.0,
+        "trend": 0.021,
+        "day": -0.004,
+        "day_change_pct": -0.01,
         "spark": [
           29105.75,
           29276.75,
@@ -437,19 +505,19 @@
           29125.5,
           29186.25,
           29524.75,
-          29525.5
+          29523.0
         ],
         "trend_components": {
-          "price_vs_ema20": 0.179,
+          "price_vs_ema20": 0.175,
           "ema20_vs_ema50": 0.203,
           "ema50_slope": 0.088,
-          "rsi": -0.515
+          "rsi": -0.517
         },
         "_raw": {
-          "price": 29525.5,
+          "price": 29523.0,
           "prev_close": 29524.75,
-          "ema20": 29420.44,
-          "ema50": 29301.49,
+          "ema20": 29420.2,
+          "ema50": 29301.39,
           "rsi14": 39.7
         }
       }
@@ -458,14 +526,14 @@
       "symbol": "YM",
       "name": "Dow (E-mini)",
       "type": "index",
-      "technical": -0.081,
+      "technical": -0.083,
       "macro": 0.462,
       "macro_weight": 0.4,
-      "composite": 0.136,
+      "composite": 0.135,
       "bias": "Neutral",
       "drivers": {
-        "trend": 0.132,
-        "day": -0.579,
+        "trend": 0.131,
+        "day": -0.583,
         "day_change_pct": -0.87,
         "spark": [
           53489.0,
@@ -477,19 +545,19 @@
           52828.0,
           53121.0,
           53745.0,
-          53278.0
+          53275.0
         ],
         "trend_components": {
-          "price_vs_ema20": -0.089,
+          "price_vs_ema20": -0.091,
           "ema20_vs_ema50": 0.451,
           "ema50_slope": 0.312,
-          "rsi": -0.16
+          "rsi": -0.162
         },
         "_raw": {
-          "price": 53278.0,
+          "price": 53275.0,
           "prev_close": 53745.0,
-          "ema20": 53372.64,
-          "ema50": 52895.2,
+          "ema20": 53372.35,
+          "ema50": 52895.08,
           "rsi14": 46.8
         }
       }
@@ -1058,15 +1126,15 @@
       "symbol": "BTC",
       "name": "Bitcoin",
       "type": "crypto",
-      "technical": 0.29,
+      "technical": 0.292,
       "macro": 0.462,
       "macro_weight": 0.2,
-      "composite": 0.324,
+      "composite": 0.326,
       "bias": "Neutral",
       "drivers": {
-        "trend": 0.843,
+        "trend": 0.846,
         "day": -1.0,
-        "day_change_pct": -1.88,
+        "day_change_pct": -1.79,
         "spark": [
           79027.42,
           80257.54,
@@ -1077,20 +1145,20 @@
           77403.62,
           77300.48,
           81271.74,
-          79739.98
+          79814.91
         ],
         "trend_components": {
           "price_vs_ema20": 1.0,
           "ema20_vs_ema50": 1.0,
           "ema50_slope": 1.0,
-          "rsi": 0.216
+          "rsi": 0.228
         },
         "_raw": {
-          "price": 79739.98,
+          "price": 79814.91,
           "prev_close": 81271.74,
-          "ema20": 75688.04,
-          "ema50": 71048.54,
-          "rsi14": 54.3
+          "ema20": 75695.17,
+          "ema50": 71051.48,
+          "rsi14": 54.6
         }
       }
     },
