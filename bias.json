@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-07T20:02:07.969774+00:00",
+  "generated_at": "2026-09-07T20:16:01.940999+00:00",
   "sentiment": {
-    "score": 0.114,
+    "score": 0.086,
     "label": "Neutral",
     "lean": "neutral",
     "conviction": "Mixed",
@@ -52,6 +52,11 @@
         "name": "calendar",
         "score": 0.513,
         "agrees": false
+      },
+      {
+        "name": "news",
+        "score": -0.354,
+        "agrees": false
       }
     ],
     "exposure": "No clear edge for ES or NQ \u2014 trade your setups on their own merit. MNQ will move more than MES either way (higher beta)."
@@ -63,7 +68,8 @@
     "driver": "Biggest driver right now: the yield curve \u2014 the main support.",
     "conflict": null,
     "calendar_note": "Recent data surprised risk-on (long) \u2014 that's part of today's tilt.",
-    "sector_note": null
+    "sector_note": null,
+    "news_note": "Watch the tape: geopolitical/war headlines are leaning risk-off right now \u2014 volatility can spike on a single update."
   },
   "macro": {
     "enabled": true,
@@ -104,7 +110,7 @@
         "impact": "Major",
         "forecast": "0.4",
         "previous": "0",
-        "minutes_until": 3868,
+        "minutes_until": 3854,
         "beat_is": null,
         "watch": "Not in the scored set \u2014 informational only."
       },
@@ -114,7 +120,7 @@
         "impact": "Major",
         "forecast": "3990000.00",
         "previous": "4060000.00",
-        "minutes_until": 3958,
+        "minutes_until": 3944,
         "beat_is": null,
         "watch": "Not in the scored set \u2014 informational only."
       },
@@ -124,7 +130,7 @@
         "impact": "Major",
         "forecast": "0.2",
         "previous": "0.2",
-        "minutes_until": 5308,
+        "minutes_until": 5294,
         "beat_is": null,
         "watch": "Not in the scored set \u2014 informational only."
       },
@@ -134,7 +140,7 @@
         "impact": "Major",
         "forecast": "2.4",
         "previous": "2.5",
-        "minutes_until": 5308,
+        "minutes_until": 5294,
         "beat_is": null,
         "watch": "Not in the scored set \u2014 informational only."
       },
@@ -144,7 +150,7 @@
         "impact": "Major",
         "forecast": "0.4",
         "previous": "0.1",
-        "minutes_until": 5308,
+        "minutes_until": 5294,
         "beat_is": null,
         "watch": "Not in the scored set \u2014 informational only."
       },
@@ -154,7 +160,7 @@
         "impact": "Major",
         "forecast": "3.4",
         "previous": "3.4",
-        "minutes_until": 5308,
+        "minutes_until": 5294,
         "beat_is": null,
         "watch": "Not in the scored set \u2014 informational only."
       },
@@ -164,7 +170,7 @@
         "impact": "Major",
         "forecast": "51",
         "previous": "51.7",
-        "minutes_until": 5398,
+        "minutes_until": 5384,
         "beat_is": "risk-on",
         "miss_is": "risk-off",
         "consensus_lean": "risk-off",
@@ -203,7 +209,7 @@
         "direction": "risk-on"
       }
     ],
-    "_fetched_at": "2026-09-07T20:01:13.169784+00:00"
+    "_fetched_at": "2026-09-07T20:15:36.107713+00:00"
   },
   "market_state": {
     "enabled": true,
@@ -374,10 +380,72 @@
     }
   },
   "news": {
-    "enabled": false,
-    "note": "fetch failed: HTTPSConnectionPool(host='api.marketaux.com', port=443): Read timed out. (read timeout=20)",
-    "items": [],
-    "net_lean": null
+    "enabled": true,
+    "items": [
+      {
+        "title": "OPEC+ keeps oil output policy unchanged for October",
+        "source": "rte.ie",
+        "published_at": "2026-09-07T10:48:58.000000Z",
+        "url": "https://www.rte.ie/news/business/2026/0907/1590578-opec-oil-output/",
+        "category": "energy",
+        "direction": "neutral",
+        "score": 0.0,
+        "why": "No output change; routine policy decision"
+      },
+      {
+        "title": "Oil prices today: Crude rises as US-Iran strikes fuel fears of prolonged Hormuz disruption",
+        "source": "timesofindia.indiatimes.com",
+        "published_at": "2026-09-07T04:20:38.000000Z",
+        "url": "https://timesofindia.indiatimes.com/business/international-business/oil-prices-today-crude-rises-as-us-iran-strikes-fuel-fears-of-prolonged-hormuz-disruption/articleshow/133863016.cms",
+        "category": "geopolitical",
+        "direction": "risk-off",
+        "score": -0.6,
+        "why": "US-Iran strikes threaten Strait disruption, oil shock"
+      },
+      {
+        "title": "OPEC+ Pauses Output Hikes Amid Escalating Iran-U.S. Maritime Conflict",
+        "source": "thestockmarketwatch.com",
+        "published_at": "2026-09-06T21:08:13.000000Z",
+        "url": "https://www2.stockmarketwatch.com/stock-market-news/opec-pauses-output-hikes-amid-escalating-iran-u-s-maritime-conflict/71476/",
+        "category": "geopolitical",
+        "direction": "risk-off",
+        "score": -0.5,
+        "why": "Iran-US conflict limits oil market stability"
+      },
+      {
+        "title": "Iran warns of 'painful response' to further US attacks amid sanctions",
+        "source": "business-standard.com",
+        "published_at": "2026-09-06T18:21:42.000000Z",
+        "url": "https://www.business-standard.com/world-news/iran-warns-of-painful-response-to-further-us-attacks-amid-sanctions-126090600807_1.html",
+        "category": "geopolitical",
+        "direction": "risk-off",
+        "score": -0.7,
+        "why": "Escalating tensions; ceasefire collapsed, war risks rising"
+      },
+      {
+        "title": "OPEC+ keeps oil output policy unchanged for October",
+        "source": "economictimes.indiatimes.com",
+        "published_at": "2026-09-06T12:14:46.000000Z",
+        "url": "https://economictimes.indiatimes.com/industry/energy/oil-gas/opec-keeps-oil-output-policy-unchanged-for-october/articleshow/133836900.cms",
+        "category": "energy",
+        "direction": "risk-off",
+        "score": -0.4,
+        "why": "Ongoing conflict constrains OPEC market influence"
+      },
+      {
+        "title": "Ukraine Pushes Congress For Russia Sanctions Before Election Recess",
+        "source": "zerohedge.com",
+        "published_at": "2026-09-05T12:10:00.000000Z",
+        "url": "https://www.zerohedge.com/geopolitical/ukraine-pushes-congress-russia-sanctions-election-recess",
+        "category": "political",
+        "direction": "neutral",
+        "score": 0.1,
+        "why": "Pre-election procedural move; unclear market impact"
+      }
+    ],
+    "net_lean": -0.354,
+    "mode": "AI",
+    "_fetched_at": "2026-09-07T20:16:01.940872+00:00"
   },
   "megacap_breadth": 0.187,
   "instruments": [
@@ -1065,15 +1133,15 @@
       "symbol": "BTC",
       "name": "Bitcoin",
       "type": "crypto",
-      "technical": 0.323,
+      "technical": 0.285,
       "macro": 0.513,
       "macro_weight": 0.2,
-      "composite": 0.361,
+      "composite": 0.331,
       "bias": "Bullish",
       "drivers": {
-        "trend": 0.813,
-        "day": -0.82,
-        "day_change_pct": -1.23,
+        "trend": 0.809,
+        "day": -0.936,
+        "day_change_pct": -1.4,
         "spark": [
           78245.81,
           77667.57,
@@ -1084,20 +1152,20 @@
           79671.97,
           79823.87,
           80350.05,
-          79361.19
+          79221.37
         ],
         "trend_components": {
           "price_vs_ema20": 1.0,
           "ema20_vs_ema50": 1.0,
           "ema50_slope": 1.0,
-          "rsi": 0.067
+          "rsi": 0.043
         },
         "_raw": {
-          "price": 79361.19,
+          "price": 79221.37,
           "prev_close": 80350.05,
-          "ema20": 76757.21,
-          "ema50": 72037.12,
-          "rsi14": 51.3
+          "ema20": 76743.9,
+          "ema50": 72031.64,
+          "rsi14": 50.9
         }
       }
     },
