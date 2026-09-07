@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-09-07T15:01:44.419294+00:00",
+  "generated_at": "2026-09-07T15:15:46.320534+00:00",
   "sentiment": {
-    "score": 0.13,
-    "label": "Risk-On",
-    "lean": "long",
-    "conviction": "Moderate",
-    "agree": 4,
-    "total": 7,
+    "score": 0.104,
+    "label": "Neutral",
+    "lean": "neutral",
+    "conviction": "Mixed",
+    "agree": 0,
+    "total": 0,
     "layers": [
       {
         "name": "price",
@@ -16,12 +16,12 @@
       {
         "name": "macro",
         "score": 0.513,
-        "agrees": true
+        "agrees": false
       },
       {
         "name": "breadth",
         "score": 0.187,
-        "agrees": true
+        "agrees": false
       },
       {
         "name": "rotation",
@@ -36,7 +36,7 @@
       {
         "name": "volatility",
         "score": 0.332,
-        "agrees": true
+        "agrees": false
       },
       {
         "name": "internals",
@@ -51,10 +51,15 @@
       {
         "name": "calendar",
         "score": 0.513,
-        "agrees": true
+        "agrees": false
+      },
+      {
+        "name": "news",
+        "score": -0.297,
+        "agrees": false
       }
     ],
-    "exposure": "Benefits most: NQ and RTY (high beta lead the way up). YM lags. For your MNQ vs MES: MNQ has more upside \u2014 but also more whip."
+    "exposure": "No clear edge for ES or NQ \u2014 trade your setups on their own merit. MNQ will move more than MES either way (higher beta)."
   },
   "summary": {
     "headline": "Clear tailwind for longs",
@@ -63,7 +68,8 @@
     "driver": "Biggest driver right now: the yield curve \u2014 the main support.",
     "conflict": null,
     "calendar_note": "Recent data surprised risk-on (long) \u2014 that's part of today's tilt.",
-    "sector_note": null
+    "sector_note": null,
+    "news_note": null
   },
   "macro": {
     "enabled": true,
@@ -104,7 +110,7 @@
         "impact": "Major",
         "forecast": "0.4",
         "previous": "0",
-        "minutes_until": 4168,
+        "minutes_until": 4154,
         "beat_is": null,
         "watch": "Not in the scored set \u2014 informational only."
       },
@@ -114,7 +120,7 @@
         "impact": "Major",
         "forecast": "3990000.00",
         "previous": "4060000.00",
-        "minutes_until": 4258,
+        "minutes_until": 4244,
         "beat_is": null,
         "watch": "Not in the scored set \u2014 informational only."
       },
@@ -124,7 +130,7 @@
         "impact": "Major",
         "forecast": "0.2",
         "previous": "0.2",
-        "minutes_until": 5608,
+        "minutes_until": 5594,
         "beat_is": null,
         "watch": "Not in the scored set \u2014 informational only."
       },
@@ -134,7 +140,7 @@
         "impact": "Major",
         "forecast": "2.4",
         "previous": "2.5",
-        "minutes_until": 5608,
+        "minutes_until": 5594,
         "beat_is": null,
         "watch": "Not in the scored set \u2014 informational only."
       },
@@ -144,7 +150,7 @@
         "impact": "Major",
         "forecast": "0.4",
         "previous": "0.1",
-        "minutes_until": 5608,
+        "minutes_until": 5594,
         "beat_is": null,
         "watch": "Not in the scored set \u2014 informational only."
       },
@@ -154,7 +160,7 @@
         "impact": "Major",
         "forecast": "3.4",
         "previous": "3.4",
-        "minutes_until": 5608,
+        "minutes_until": 5594,
         "beat_is": null,
         "watch": "Not in the scored set \u2014 informational only."
       },
@@ -164,7 +170,7 @@
         "impact": "Major",
         "forecast": "51",
         "previous": "51.7",
-        "minutes_until": 5698,
+        "minutes_until": 5684,
         "beat_is": "risk-on",
         "miss_is": "risk-off",
         "consensus_lean": "risk-off",
@@ -203,7 +209,7 @@
         "direction": "risk-on"
       }
     ],
-    "_fetched_at": "2026-09-07T15:01:10.536760+00:00"
+    "_fetched_at": "2026-09-07T15:15:29.779787+00:00"
   },
   "market_state": {
     "enabled": true,
@@ -279,7 +285,7 @@
       {
         "symbol": "DX-Y.NYB",
         "name": "US Dollar",
-        "day_pct": -0.27,
+        "day_pct": -0.29,
         "signal": "risk-on"
       },
       {
@@ -297,7 +303,7 @@
       {
         "symbol": "^VIX",
         "name": "VIX (fear)",
-        "day_pct": 4.61,
+        "day_pct": 5.09,
         "signal": "risk-off"
       },
       {
@@ -374,10 +380,72 @@
     }
   },
   "news": {
-    "enabled": false,
-    "note": "fetch failed: HTTPSConnectionPool(host='api.marketaux.com', port=443): Read timed out. (read timeout=20)",
-    "items": [],
-    "net_lean": null
+    "enabled": true,
+    "items": [
+      {
+        "title": "OPEC+ keeps oil output policy unchanged for October",
+        "source": "rte.ie",
+        "published_at": "2026-09-07T10:48:58.000000Z",
+        "url": "https://www.rte.ie/news/business/2026/0907/1590578-opec-oil-output/",
+        "category": "energy",
+        "direction": "neutral",
+        "score": 0.0,
+        "why": "OPEC+ holds output steady, no policy shift"
+      },
+      {
+        "title": "Oil prices today: Crude rises as US-Iran strikes fuel fears of prolonged Hormuz disruption",
+        "source": "timesofindia.indiatimes.com",
+        "published_at": "2026-09-07T04:20:38.000000Z",
+        "url": "https://timesofindia.indiatimes.com/business/international-business/oil-prices-today-crude-rises-as-us-iran-strikes-fuel-fears-of-prolonged-hormuz-disruption/articleshow/133863016.cms",
+        "category": "geopolitical",
+        "direction": "risk-off",
+        "score": -0.6,
+        "why": "US-Iran strikes escalate, Hormuz disruption risk"
+      },
+      {
+        "title": "OPEC+ Pauses Output Hikes Amid Escalating Iran-U.S. Maritime Conflict",
+        "source": "thestockmarketwatch.com",
+        "published_at": "2026-09-06T21:08:13.000000Z",
+        "url": "https://www2.stockmarketwatch.com/stock-market-news/opec-pauses-output-hikes-amid-escalating-iran-u-s-maritime-conflict/71476/",
+        "category": "geopolitical",
+        "direction": "risk-off",
+        "score": -0.5,
+        "why": "Iran-US conflict limits OPEC control, uncertainty"
+      },
+      {
+        "title": "Iran warns of 'painful response' to further US attacks amid sanctions",
+        "source": "business-standard.com",
+        "published_at": "2026-09-06T18:21:42.000000Z",
+        "url": "https://www.business-standard.com/world-news/iran-warns-of-painful-response-to-further-us-attacks-amid-sanctions-126090600807_1.html",
+        "category": "geopolitical",
+        "direction": "risk-off",
+        "score": -0.7,
+        "why": "Iran warns painful response, ceasefire collapsed"
+      },
+      {
+        "title": "OPEC+ keeps oil output policy unchanged for October",
+        "source": "economictimes.indiatimes.com",
+        "published_at": "2026-09-06T12:14:46.000000Z",
+        "url": "https://economictimes.indiatimes.com/industry/energy/oil-gas/opec-keeps-oil-output-policy-unchanged-for-october/articleshow/133836900.cms",
+        "category": "energy",
+        "direction": "neutral",
+        "score": 0.1,
+        "why": "OPEC output steady but Iran conflict limits influence"
+      },
+      {
+        "title": "Ukraine Pushes Congress For Russia Sanctions Before Election Recess",
+        "source": "zerohedge.com",
+        "published_at": "2026-09-05T12:10:00.000000Z",
+        "url": "https://www.zerohedge.com/geopolitical/ukraine-pushes-congress-russia-sanctions-election-recess",
+        "category": "political",
+        "direction": "neutral",
+        "score": 0.0,
+        "why": "Ukraine sanctions push, unclear near-term market impact"
+      }
+    ],
+    "net_lean": -0.297,
+    "mode": "AI",
+    "_fetched_at": "2026-09-07T15:15:46.320383+00:00"
   },
   "megacap_breadth": 0.187,
   "instruments": [
@@ -1065,15 +1133,15 @@
       "symbol": "BTC",
       "name": "Bitcoin",
       "type": "crypto",
-      "technical": 0.267,
+      "technical": 0.262,
       "macro": 0.513,
       "macro_weight": 0.2,
-      "composite": 0.316,
+      "composite": 0.312,
       "bias": "Neutral",
       "drivers": {
-        "trend": 0.806,
-        "day": -0.991,
-        "day_change_pct": -1.49,
+        "trend": 0.803,
+        "day": -1.0,
+        "day_change_pct": -1.62,
         "spark": [
           78245.81,
           77667.57,
@@ -1084,20 +1152,20 @@
           79671.97,
           79823.87,
           80350.05,
-          79155.35
+          79046.0
         ],
         "trend_components": {
           "price_vs_ema20": 1.0,
           "ema20_vs_ema50": 1.0,
           "ema50_slope": 1.0,
-          "rsi": 0.032
+          "rsi": 0.013
         },
         "_raw": {
-          "price": 79155.35,
+          "price": 79046.0,
           "prev_close": 80350.05,
-          "ema20": 76737.61,
-          "ema50": 72029.05,
-          "rsi14": 50.6
+          "ema20": 76727.2,
+          "ema50": 72024.76,
+          "rsi14": 50.3
         }
       }
     },
@@ -1105,15 +1173,15 @@
       "symbol": "DAX",
       "name": "DAX \u00b7 Germany",
       "type": "intl",
-      "technical": 0.109,
+      "technical": 0.081,
       "macro": 0.513,
       "macro_weight": 0.4,
-      "composite": 0.271,
+      "composite": 0.254,
       "bias": "Neutral",
       "drivers": {
-        "trend": 0.207,
-        "day": -0.12,
-        "day_change_pct": -0.18,
+        "trend": 0.19,
+        "day": -0.174,
+        "day_change_pct": -0.26,
         "spark": [
           26266.14,
           26285.96,
@@ -1124,20 +1192,20 @@
           25839.33,
           26003.32,
           26046.4,
-          25999.5
+          25978.43
         ],
         "trend_components": {
-          "price_vs_ema20": -0.143,
-          "ema20_vs_ema50": 0.637,
-          "ema50_slope": 0.51,
-          "rsi": -0.181
+          "price_vs_ema20": -0.18,
+          "ema20_vs_ema50": 0.635,
+          "ema50_slope": 0.508,
+          "rsi": -0.208
         },
         "_raw": {
-          "price": 25999.5,
+          "price": 25978.43,
           "prev_close": 26046.4,
-          "ema20": 26074.32,
-          "ema50": 25746.37,
-          "rsi14": 46.4
+          "ema20": 26072.32,
+          "ema50": 25745.55,
+          "rsi14": 45.8
         }
       }
     },
@@ -1185,15 +1253,15 @@
       "symbol": "FTSE",
       "name": "FTSE \u00b7 UK",
       "type": "intl",
-      "technical": 0.244,
+      "technical": 0.204,
       "macro": 0.513,
       "macro_weight": 0.4,
-      "composite": 0.352,
-      "bias": "Bullish",
+      "composite": 0.328,
+      "bias": "Neutral",
       "drivers": {
-        "trend": 0.343,
-        "day": 0.013,
-        "day_change_pct": 0.02,
+        "trend": 0.315,
+        "day": -0.053,
+        "day_change_pct": -0.08,
         "spark": [
           10854.3,
           10886.2,
@@ -1204,20 +1272,20 @@
           10756.5,
           10831.5,
           10831.1,
-          10833.23
+          10822.49
         ],
         "trend_components": {
-          "price_vs_ema20": 0.133,
-          "ema20_vs_ema50": 0.38,
-          "ema50_slope": 0.317,
-          "rsi": 0.646
+          "price_vs_ema20": 0.088,
+          "ema20_vs_ema50": 0.377,
+          "ema50_slope": 0.314,
+          "rsi": 0.576
         },
         "_raw": {
-          "price": 10833.23,
+          "price": 10822.49,
           "prev_close": 10831.1,
-          "ema20": 10804.43,
-          "ema50": 10722.9,
-          "rsi14": 62.9
+          "ema20": 10803.4,
+          "ema50": 10722.48,
+          "rsi14": 61.5
         }
       }
     }
