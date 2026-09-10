@@ -1,31 +1,31 @@
 {
-  "generated_at": "2026-09-10T17:01:46.566371+00:00",
+  "generated_at": "2026-09-10T17:16:46.503006+00:00",
   "sentiment": {
-    "score": 0.134,
+    "score": 0.121,
     "label": "Risk-On",
     "lean": "long",
-    "conviction": "High",
+    "conviction": "Moderate",
     "agree": 5,
-    "total": 7,
+    "total": 8,
     "layers": [
       {
         "name": "price",
-        "score": -0.29,
+        "score": -0.277,
         "agrees": false
       },
       {
         "name": "macro",
-        "score": 0.537,
+        "score": 0.446,
         "agrees": true
       },
       {
         "name": "breadth",
-        "score": 0.208,
+        "score": 0.213,
         "agrees": true
       },
       {
         "name": "rotation",
-        "score": 0.2,
+        "score": 0.24,
         "agrees": true
       },
       {
@@ -40,12 +40,12 @@
       },
       {
         "name": "internals",
-        "score": 0.0,
+        "score": -0.15,
         "agrees": false
       },
       {
         "name": "credit",
-        "score": 0.967,
+        "score": 1.0,
         "agrees": true
       },
       {
@@ -55,7 +55,7 @@
       },
       {
         "name": "news",
-        "score": -0.365,
+        "score": -0.275,
         "agrees": false
       }
     ],
@@ -65,23 +65,39 @@
     "headline": "Mild tailwind for longs",
     "guidance": "A slight edge to longs \u2014 lean long when a setup is a coin-flip, but it's not strong enough to force trades.",
     "lean": "long",
-    "driver": "Biggest driver right now: credit spreads \u2014 the main support.",
+    "driver": "Biggest driver right now: the yield curve \u2014 the main support.",
     "conflict": null,
-    "calendar_note": "Core Inflation Rate Month-over-Month drops in 19h 28m \u2014 expect a volatility spike around it. Many traders cut size into major releases.",
+    "calendar_note": "Core Inflation Rate Month-over-Month drops in 19h 13m \u2014 expect a volatility spike around it. Many traders cut size into major releases.",
     "sector_note": null,
-    "news_note": "Watch the tape: geopolitical/war headlines are leaning risk-off right now \u2014 volatility can spike on a single update."
+    "news_note": null
   },
   "macro": {
     "enabled": true,
-    "score": 0.349,
-    "regime": 0.537,
+    "score": 0.29,
+    "regime": 0.446,
     "drivers": {
+      "yield_curve": {
+        "value": 0.41,
+        "score": 0.82
+      },
+      "teny_momentum": {
+        "chg_1m": 0.08,
+        "score": -0.2
+      },
+      "unemp_trend": {
+        "chg_3m": -0.2,
+        "score": 0.667
+      },
+      "vix": {
+        "level": 16.5,
+        "score": 0.354
+      },
       "credit_spread": {
         "level": 2.71,
         "chg_1m": 0.0,
         "score": 0.537
       },
-      "_composite": 0.537
+      "_composite": 0.446
     }
   },
   "calendar": {
@@ -94,7 +110,7 @@
         "impact": "Major",
         "forecast": "0.2",
         "previous": "0.2",
-        "minutes_until": 1168,
+        "minutes_until": 1153,
         "beat_is": null,
         "watch": "Not in the scored set \u2014 informational only."
       },
@@ -104,7 +120,7 @@
         "impact": "Major",
         "forecast": "2.4",
         "previous": "2.5",
-        "minutes_until": 1168,
+        "minutes_until": 1153,
         "beat_is": null,
         "watch": "Not in the scored set \u2014 informational only."
       },
@@ -114,7 +130,7 @@
         "impact": "Major",
         "forecast": "0.4",
         "previous": "0.1",
-        "minutes_until": 1168,
+        "minutes_until": 1153,
         "beat_is": null,
         "watch": "Not in the scored set \u2014 informational only."
       },
@@ -124,7 +140,7 @@
         "impact": "Major",
         "forecast": "3.4",
         "previous": "3.4",
-        "minutes_until": 1168,
+        "minutes_until": 1153,
         "beat_is": null,
         "watch": "Not in the scored set \u2014 informational only."
       },
@@ -134,7 +150,7 @@
         "impact": "Major",
         "forecast": "51",
         "previous": "51.7",
-        "minutes_until": 1258,
+        "minutes_until": 1243,
         "beat_is": "risk-on",
         "miss_is": "risk-off",
         "consensus_lean": "risk-off",
@@ -146,7 +162,7 @@
         "impact": "Major",
         "forecast": null,
         "previous": "-0.6",
-        "minutes_until": 8368,
+        "minutes_until": 8353,
         "beat_is": "risk-on",
         "miss_is": "risk-off",
         "consensus_lean": "neutral",
@@ -158,7 +174,7 @@
         "impact": "Major",
         "forecast": null,
         "previous": "3.75",
-        "minutes_until": 8698,
+        "minutes_until": 8683,
         "beat_is": "risk-off",
         "miss_is": "risk-on",
         "consensus_lean": "neutral",
@@ -170,7 +186,7 @@
         "impact": "Major",
         "forecast": null,
         "previous": "",
-        "minutes_until": 8698,
+        "minutes_until": 8683,
         "beat_is": null,
         "watch": "Not in the scored set \u2014 informational only."
       }
@@ -193,7 +209,7 @@
         "actual": "0.4"
       }
     ],
-    "_fetched_at": "2026-09-10T17:01:15.016343+00:00"
+    "_fetched_at": "2026-09-10T17:16:33.809806+00:00"
   },
   "market_state": {
     "enabled": true,
@@ -202,31 +218,25 @@
         "symbol": "XLC",
         "name": "Communications",
         "group": "offensive",
-        "day_pct": 0.63
+        "day_pct": 0.65
       },
       {
         "symbol": "XLP",
         "name": "Consumer Staples",
         "group": "defensive",
-        "day_pct": 0.35
+        "day_pct": 0.31
       },
       {
         "symbol": "XLY",
         "name": "Consumer Disc.",
         "group": "offensive",
-        "day_pct": -0.07
+        "day_pct": -0.06
       },
       {
         "symbol": "XLE",
         "name": "Energy",
         "group": "cyclical",
-        "day_pct": -0.27
-      },
-      {
-        "symbol": "XLF",
-        "name": "Financials",
-        "group": "cyclical",
-        "day_pct": -0.34
+        "day_pct": -0.12
       },
       {
         "symbol": "XLV",
@@ -235,16 +245,16 @@
         "day_pct": -0.38
       },
       {
+        "symbol": "XLF",
+        "name": "Financials",
+        "group": "cyclical",
+        "day_pct": -0.44
+      },
+      {
         "symbol": "XLRE",
         "name": "Real Estate",
         "group": "defensive",
-        "day_pct": -0.65
-      },
-      {
-        "symbol": "XLU",
-        "name": "Utilities",
-        "group": "defensive",
-        "day_pct": -0.72
+        "day_pct": -0.63
       },
       {
         "symbol": "XLI",
@@ -253,53 +263,59 @@
         "day_pct": -0.74
       },
       {
+        "symbol": "XLU",
+        "name": "Utilities",
+        "group": "defensive",
+        "day_pct": -0.82
+      },
+      {
         "symbol": "XLK",
         "name": "Technology",
         "group": "offensive",
-        "day_pct": -1.0
+        "day_pct": -1.02
       },
       {
         "symbol": "XLB",
         "name": "Materials",
         "group": "cyclical",
-        "day_pct": -1.28
+        "day_pct": -1.31
       }
     ],
     "barometer": [
       {
         "symbol": "DX-Y.NYB",
         "name": "US Dollar",
-        "day_pct": 0.21,
+        "day_pct": 0.23,
         "signal": "risk-off"
       },
       {
         "symbol": "GC=F",
         "name": "Gold",
-        "day_pct": -0.28,
+        "day_pct": -0.27,
         "signal": "risk-on"
       },
       {
         "symbol": "TLT",
         "name": "Treasuries (20y)",
-        "day_pct": -0.69,
+        "day_pct": -0.65,
         "signal": "risk-on"
       },
       {
         "symbol": "^VIX",
         "name": "VIX (fear)",
-        "day_pct": 5.35,
+        "day_pct": 4.92,
         "signal": "risk-off"
       },
       {
         "symbol": "CL=F",
         "name": "Crude Oil",
-        "day_pct": 5.6,
+        "day_pct": 5.87,
         "signal": "growth"
       }
     ],
-    "rotation": 0.2,
-    "offensive_avg": -0.15,
-    "defensive_avg": -0.35
+    "rotation": 0.24,
+    "offensive_avg": -0.14,
+    "defensive_avg": -0.38
   },
   "volatility": {
     "enabled": true,
@@ -317,17 +333,17 @@
     "enabled": true,
     "breadth": {
       "enabled": true,
-      "rsp": -0.43,
-      "spy": -0.43,
-      "diff": 0.0,
-      "score": 0.0
+      "rsp": -0.48,
+      "spy": -0.42,
+      "diff": -0.06,
+      "score": -0.15
     },
     "credit": {
       "enabled": true,
       "hyg": -0.28,
-      "lqd": -0.57,
-      "diff": 0.29,
-      "score": 0.967
+      "lqd": -0.59,
+      "diff": 0.31,
+      "score": 1.0
     }
   },
   "session": {
@@ -340,11 +356,11 @@
         "overnight_high": 7666.25,
         "overnight_low": 7595.0,
         "open": 7599.0,
-        "last": 7607.75,
+        "last": 7609.25,
         "gap_pts": -45.5,
         "gap_pct": -0.6,
         "open_location": "inside",
-        "vwap": 7603.45,
+        "vwap": 7603.86,
         "note": "ES opened INSIDE the overnight range (7595.0-7666.25) \u2014 balanced and rotational. Favor fading the edges until one side breaks and holds; a clean break of either end is the cue to trade with it."
       },
       "NQ": {
@@ -354,11 +370,11 @@
         "overnight_high": 29508.25,
         "overnight_low": 29043.25,
         "open": 29089.5,
-        "last": 29213.25,
+        "last": 29229.75,
         "gap_pts": -365.0,
         "gap_pct": -1.24,
         "open_location": "inside",
-        "vwap": 29183.34,
+        "vwap": 29185.32,
         "note": "NQ opened INSIDE the overnight range (29043.25-29508.25) \u2014 balanced and rotational. Favor fading the edges until one side breaks and holds; a clean break of either end is the cue to trade with it."
       }
     }
@@ -367,14 +383,24 @@
     "enabled": true,
     "items": [
       {
+        "title": "Surging oil prices from Iran war will be \u2018tumbling downward\u2019 after midterms, Trump says",
+        "source": "fastcompany.com",
+        "published_at": "2026-09-10T14:16:47.000000Z",
+        "url": "https://www.fastcompany.com/91605168/surging-oil-prices-rian-war-tumbling-downward-after-midterm-elections-trump-says?partner=rss&amp;utm_source=rss&amp;utm_medium=feed&amp;utm_campaign=rss+fastcompany&amp;utm_content=rss",
+        "category": "energy",
+        "direction": "risk-on",
+        "score": 0.3,
+        "why": "Trump signals oil price relief post-midterms"
+      },
+      {
         "title": "\u2018We worry now\u2019: Oil tops $100, diesel hits record highs amid Iran war escalation",
         "source": "fortune.com",
         "published_at": "2026-09-10T07:05:00.000000Z",
         "url": "https://fortune.com/2026/09/10/we-worry-now-oil-tops-100-diesel-record-highs-iran-escalation/",
         "category": "energy",
         "direction": "risk-off",
-        "score": -0.7,
-        "why": "Oil spike threatens inflation, margin compression risk"
+        "score": -0.6,
+        "why": "Oil $100+, escalating Middle East conflict"
       },
       {
         "title": "Trump doubles down on 'Trump Strait' plan for Hormuz, says Iran will be 'thrilled'",
@@ -384,7 +410,7 @@
         "category": "geopolitical",
         "direction": "neutral",
         "score": 0.0,
-        "why": "Bluster without concrete escalation; mixed signals"
+        "why": "Rhetoric only, no material policy change"
       },
       {
         "title": "Pentagon Informs Allies Prepare For \"Protracted\" War In Ukraine",
@@ -393,8 +419,8 @@
         "url": "https://www.zerohedge.com/geopolitical/pentagon-informs-allies-prepare-protracted-war-ukraine",
         "category": "geopolitical",
         "direction": "risk-off",
-        "score": -0.4,
-        "why": "Protracted conflict raises uncertainty, defense capex only"
+        "score": -0.5,
+        "why": "Protracted Ukraine war signals prolonged uncertainty"
       },
       {
         "title": "Trump says oil prices that spiked because of Iran war likely won't come down until after midterms",
@@ -403,8 +429,8 @@
         "url": "https://www.yahoo.com/news/politics/articles/trump-says-oil-prices-spiked-184330387.html",
         "category": "energy",
         "direction": "risk-off",
-        "score": -0.6,
-        "why": "Sustained oil elevated through midterms pressures margins"
+        "score": -0.5,
+        "why": "Oil surge persists, election-driven price pressure"
       },
       {
         "title": "A history of oil price swings this century",
@@ -413,39 +439,29 @@
         "url": "https://www.rte.ie/news/business/2026/0909/1590893-a-history-of-oil-price-swings-this-century/",
         "category": "energy",
         "direction": "risk-off",
-        "score": -0.65,
-        "why": "Supply disruption risk at $100 barrel level"
-      },
-      {
-        "title": "Trump and Putin Hold \u201cConstructive\u201d One-Hour Call as U.S. Ramps Up Iran Sanctions",
-        "source": "thestockmarketwatch.com",
-        "published_at": "2026-09-08T14:38:17.000000Z",
-        "url": "https://www2.stockmarketwatch.com/stock-market-news/trump-and-putin-hold-constructive-one-hour-call-as-u-s-ramps-up-iran-sanctions/71538/",
-        "category": "geopolitical",
-        "direction": "risk-on",
-        "score": 0.3,
-        "why": "De-escalation signal; diplomatic engagement reduces tensions"
+        "score": -0.6,
+        "why": "Oil breach $100 from Iran conflict escalation"
       }
     ],
-    "net_lean": -0.365,
+    "net_lean": -0.275,
     "mode": "AI",
-    "_fetched_at": "2026-09-10T17:01:46.566252+00:00"
+    "_fetched_at": "2026-09-10T17:16:46.502862+00:00"
   },
-  "megacap_breadth": 0.208,
+  "megacap_breadth": 0.213,
   "instruments": [
     {
       "symbol": "ES",
       "name": "S&P 500 (E-mini)",
       "type": "index",
-      "technical": -0.119,
-      "macro": 0.349,
+      "technical": -0.113,
+      "macro": 0.29,
       "macro_weight": 0.4,
-      "composite": 0.068,
+      "composite": 0.048,
       "bias": "Neutral",
       "drivers": {
-        "trend": -0.036,
-        "day": -0.312,
-        "day_change_pct": -0.47,
+        "trend": -0.032,
+        "day": -0.301,
+        "day_change_pct": -0.45,
         "spark": [
           7742.5,
           7722.0,
@@ -456,20 +472,20 @@
           7722.0,
           7680.5,
           7643.75,
-          7608.0
+          7609.25
         ],
         "trend_components": {
-          "price_vs_ema20": -0.483,
+          "price_vs_ema20": -0.475,
           "ema20_vs_ema50": 0.388,
-          "ema50_slope": 0.272,
-          "rsi": -0.281
+          "ema50_slope": 0.273,
+          "rsi": -0.275
         },
         "_raw": {
-          "price": 7608.0,
+          "price": 7609.25,
           "prev_close": 7643.75,
-          "ema20": 7682.15,
-          "ema50": 7623.06,
-          "rsi14": 44.4
+          "ema20": 7682.27,
+          "ema50": 7623.11,
+          "rsi14": 44.5
         }
       }
     },
@@ -477,15 +493,15 @@
       "symbol": "NQ",
       "name": "Nasdaq-100 (E-mini)",
       "type": "index",
-      "technical": -0.191,
-      "macro": 0.349,
+      "technical": -0.176,
+      "macro": 0.29,
       "macro_weight": 0.4,
-      "composite": 0.025,
+      "composite": 0.01,
       "bias": "Neutral",
       "drivers": {
-        "trend": -0.045,
-        "day": -0.53,
-        "day_change_pct": -0.79,
+        "trend": -0.036,
+        "day": -0.501,
+        "day_change_pct": -0.75,
         "spark": [
           29695.75,
           29491.75,
@@ -496,20 +512,20 @@
           29565.25,
           29538.75,
           29448.75,
-          29214.75
+          29227.5
         ],
         "trend_components": {
-          "price_vs_ema20": -0.341,
-          "ema20_vs_ema50": 0.175,
-          "ema50_slope": 0.126,
-          "rsi": -0.091
+          "price_vs_ema20": -0.321,
+          "ema20_vs_ema50": 0.176,
+          "ema50_slope": 0.127,
+          "rsi": -0.078
         },
         "_raw": {
-          "price": 29214.75,
+          "price": 29227.5,
           "prev_close": 29448.75,
-          "ema20": 29415.32,
-          "ema50": 29312.89,
-          "rsi14": 48.2
+          "ema20": 29416.53,
+          "ema50": 29313.39,
+          "rsi14": 48.4
         }
       }
     },
@@ -517,15 +533,15 @@
       "symbol": "YM",
       "name": "Dow (E-mini)",
       "type": "index",
-      "technical": -0.306,
-      "macro": 0.349,
+      "technical": -0.3,
+      "macro": 0.29,
       "macro_weight": 0.4,
-      "composite": -0.044,
+      "composite": -0.064,
       "bias": "Neutral",
       "drivers": {
-        "trend": -0.27,
-        "day": -0.389,
-        "day_change_pct": -0.58,
+        "trend": -0.267,
+        "day": -0.378,
+        "day_change_pct": -0.57,
         "spark": [
           53621.0,
           53584.0,
@@ -536,20 +552,20 @@
           53440.0,
           52832.0,
           52425.0,
-          52119.0
+          52128.0
         ],
         "trend_components": {
-          "price_vs_ema20": -0.961,
-          "ema20_vs_ema50": 0.28,
+          "price_vs_ema20": -0.954,
+          "ema20_vs_ema50": 0.281,
           "ema50_slope": 0.129,
-          "rsi": -0.419
+          "rsi": -0.415
         },
         "_raw": {
-          "price": 52119.0,
+          "price": 52128.0,
           "prev_close": 52425.0,
-          "ema20": 53140.86,
-          "ema50": 52844.82,
-          "rsi14": 41.6
+          "ema20": 53141.72,
+          "ema50": 52845.17,
+          "rsi14": 41.7
         }
       }
     },
@@ -557,15 +573,15 @@
       "symbol": "RTY",
       "name": "Russell 2000 (E-mini)",
       "type": "index",
-      "technical": -0.543,
-      "macro": 0.349,
+      "technical": -0.521,
+      "macro": 0.29,
       "macro_weight": 0.4,
-      "composite": -0.186,
+      "composite": -0.197,
       "bias": "Neutral",
       "drivers": {
-        "trend": -0.515,
-        "day": -0.607,
-        "day_change_pct": -0.91,
+        "trend": -0.511,
+        "day": -0.545,
+        "day_change_pct": -0.82,
         "spark": [
           3019.0,
           2977.5,
@@ -576,20 +592,20 @@
           2976.6,
           2963.6,
           2923.0,
-          2896.4
+          2899.1
         ],
         "trend_components": {
           "price_vs_ema20": -1.0,
-          "ema20_vs_ema50": 0.035,
-          "ema50_slope": -0.201,
-          "rsi": -0.869
+          "ema20_vs_ema50": 0.037,
+          "ema50_slope": -0.199,
+          "rsi": -0.854
         },
         "_raw": {
-          "price": 2896.4,
+          "price": 2899.1,
           "prev_close": 2923.0,
-          "ema20": 2974.55,
-          "ema50": 2972.48,
-          "rsi14": 32.6
+          "ema20": 2974.81,
+          "ema50": 2972.58,
+          "rsi14": 32.9
         }
       }
     },
@@ -597,15 +613,15 @@
       "symbol": "NVDA",
       "name": "Nvidia",
       "type": "stock",
-      "technical": -0.006,
-      "macro": 0.349,
+      "technical": -0.004,
+      "macro": 0.29,
       "macro_weight": 0.2,
-      "composite": 0.065,
+      "composite": 0.055,
       "bias": "Neutral",
       "drivers": {
-        "trend": 0.42,
+        "trend": 0.423,
         "day": -1.0,
-        "day_change_pct": -2.19,
+        "day_change_pct": -2.17,
         "spark": [
           227.98,
           217.55,
@@ -616,16 +632,16 @@
           230.36,
           225.73,
           223.67,
-          218.77
+          218.81
         ],
         "trend_components": {
-          "price_vs_ema20": -0.308,
+          "price_vs_ema20": -0.3,
           "ema20_vs_ema50": 1.0,
           "ema50_slope": 1.0,
-          "rsi": 0.063
+          "rsi": 0.064
         },
         "_raw": {
-          "price": 218.77,
+          "price": 218.81,
           "prev_close": 223.67,
           "ema20": 220.13,
           "ema50": 214.81,
@@ -637,15 +653,15 @@
       "symbol": "TSLA",
       "name": "Tesla",
       "type": "stock",
-      "technical": 0.125,
-      "macro": 0.349,
+      "technical": 0.161,
+      "macro": 0.29,
       "macro_weight": 0.2,
-      "composite": 0.17,
+      "composite": 0.187,
       "bias": "Neutral",
       "drivers": {
-        "trend": 0.335,
-        "day": -0.364,
-        "day_change_pct": -0.55,
+        "trend": 0.34,
+        "day": -0.256,
+        "day_change_pct": -0.38,
         "spark": [
           354.81,
           348.75,
@@ -656,20 +672,20 @@
           354.08,
           368.16,
           367.81,
-          365.8
+          366.4
         ],
         "trend_components": {
           "price_vs_ema20": 1.0,
-          "ema20_vs_ema50": -0.441,
-          "ema50_slope": 0.293,
-          "rsi": 0.363
+          "ema20_vs_ema50": -0.437,
+          "ema50_slope": 0.297,
+          "rsi": 0.375
         },
         "_raw": {
-          "price": 365.8,
+          "price": 366.4,
           "prev_close": 367.81,
-          "ema20": 355.81,
-          "ema50": 358.98,
-          "rsi14": 57.3
+          "ema20": 355.87,
+          "ema50": 359.0,
+          "rsi14": 57.5
         }
       }
     },
@@ -677,15 +693,15 @@
       "symbol": "AAPL",
       "name": "Apple",
       "type": "stock",
-      "technical": 0.834,
-      "macro": 0.349,
+      "technical": 0.852,
+      "macro": 0.29,
       "macro_weight": 0.2,
-      "composite": 0.737,
+      "composite": 0.74,
       "bias": "Bullish",
       "drivers": {
-        "trend": 0.763,
+        "trend": 0.789,
         "day": 1.0,
-        "day_change_pct": 2.46,
+        "day_change_pct": 2.61,
         "spark": [
           314.58,
           319.7,
@@ -696,20 +712,20 @@
           319.97,
           316.22,
           315.34,
-          323.1
+          323.57
         ],
         "trend_components": {
-          "price_vs_ema20": 0.916,
-          "ema20_vs_ema50": 0.678,
-          "ema50_slope": 0.786,
-          "rsi": 0.61
+          "price_vs_ema20": 0.984,
+          "ema20_vs_ema50": 0.683,
+          "ema50_slope": 0.79,
+          "rsi": 0.628
         },
         "_raw": {
-          "price": 323.1,
+          "price": 323.57,
           "prev_close": 315.34,
-          "ema20": 317.28,
-          "ema50": 313.04,
-          "rsi14": 62.2
+          "ema20": 317.33,
+          "ema50": 313.05,
+          "rsi14": 62.6
         }
       }
     },
@@ -717,15 +733,15 @@
       "symbol": "MSFT",
       "name": "Microsoft",
       "type": "stock",
-      "technical": 0.561,
-      "macro": 0.349,
+      "technical": 0.599,
+      "macro": 0.29,
       "macro_weight": 0.2,
-      "composite": 0.519,
+      "composite": 0.537,
       "bias": "Bullish",
       "drivers": {
-        "trend": 0.673,
-        "day": 0.3,
-        "day_change_pct": 0.45,
+        "trend": 0.692,
+        "day": 0.382,
+        "day_change_pct": 0.57,
         "spark": [
           505.06,
           513.53,
@@ -736,20 +752,20 @@
           499.7,
           493.95,
           491.65,
-          493.86
+          494.46
         ],
         "trend_components": {
-          "price_vs_ema20": 0.32,
+          "price_vs_ema20": 0.376,
           "ema20_vs_ema50": 1.0,
           "ema50_slope": 1.0,
-          "rsi": 0.383
+          "rsi": 0.398
         },
         "_raw": {
-          "price": 493.86,
+          "price": 494.46,
           "prev_close": 491.65,
-          "ema20": 490.72,
-          "ema50": 463.63,
-          "rsi14": 57.7
+          "ema20": 490.77,
+          "ema50": 463.65,
+          "rsi14": 58.0
         }
       }
     },
@@ -757,15 +773,15 @@
       "symbol": "GOOGL",
       "name": "Alphabet",
       "type": "stock",
-      "technical": -0.46,
-      "macro": 0.349,
+      "technical": -0.463,
+      "macro": 0.29,
       "macro_weight": 0.2,
-      "composite": -0.298,
+      "composite": -0.312,
       "bias": "Neutral",
       "drivers": {
-        "trend": -0.771,
-        "day": 0.264,
-        "day_change_pct": 0.4,
+        "trend": -0.772,
+        "day": 0.256,
+        "day_change_pct": 0.38,
         "spark": [
           340.43,
           346.37,
@@ -776,19 +792,19 @@
           338.46,
           338.36,
           330.65,
-          331.96
+          331.92
         ],
         "trend_components": {
           "price_vs_ema20": -1.0,
           "ema20_vs_ema50": -0.773,
           "ema50_slope": -0.789,
-          "rsi": -0.403
+          "rsi": -0.405
         },
         "_raw": {
-          "price": 331.96,
+          "price": 331.92,
           "prev_close": 330.65,
           "ema20": 340.66,
-          "ema50": 346.01,
+          "ema50": 346.0,
           "rsi14": 41.9
         }
       }
@@ -797,15 +813,15 @@
       "symbol": "AMZN",
       "name": "Amazon",
       "type": "stock",
-      "technical": -0.133,
-      "macro": 0.349,
+      "technical": -0.146,
+      "macro": 0.29,
       "macro_weight": 0.2,
-      "composite": -0.037,
+      "composite": -0.059,
       "bias": "Neutral",
       "drivers": {
-        "trend": -0.246,
-        "day": 0.132,
-        "day_change_pct": 0.2,
+        "trend": -0.249,
+        "day": 0.094,
+        "day_change_pct": 0.14,
         "spark": [
           256.26,
           266.43,
@@ -816,20 +832,20 @@
           258.51,
           256.97,
           252.4,
-          252.9
+          252.76
         ],
         "trend_components": {
           "price_vs_ema20": -1.0,
-          "ema20_vs_ema50": 0.423,
-          "ema50_slope": 0.125,
-          "rsi": -0.415
+          "ema20_vs_ema50": 0.422,
+          "ema50_slope": 0.124,
+          "rsi": -0.425
         },
         "_raw": {
-          "price": 252.9,
+          "price": 252.76,
           "prev_close": 252.4,
-          "ema20": 258.14,
-          "ema50": 255.97,
-          "rsi14": 41.7
+          "ema20": 258.12,
+          "ema50": 255.96,
+          "rsi14": 41.5
         }
       }
     },
@@ -837,15 +853,15 @@
       "symbol": "META",
       "name": "Meta",
       "type": "stock",
-      "technical": 0.454,
-      "macro": 0.349,
+      "technical": 0.44,
+      "macro": 0.29,
       "macro_weight": 0.2,
-      "composite": 0.433,
+      "composite": 0.41,
       "bias": "Bullish",
       "drivers": {
-        "trend": 0.728,
-        "day": -0.187,
-        "day_change_pct": -0.28,
+        "trend": 0.727,
+        "day": -0.232,
+        "day_change_pct": -0.35,
         "spark": [
           571.1,
           578.02,
@@ -856,20 +872,20 @@
           616.77,
           613.48,
           653.69,
-          651.86
+          651.42
         ],
         "trend_components": {
           "price_vs_ema20": 1.0,
-          "ema20_vs_ema50": 0.258,
-          "ema50_slope": 0.655,
+          "ema20_vs_ema50": 0.256,
+          "ema50_slope": 0.653,
           "rsi": 1.0
         },
         "_raw": {
-          "price": 651.86,
+          "price": 651.42,
           "prev_close": 653.69,
-          "ema20": 598.45,
-          "ema50": 595.38,
-          "rsi14": 88.5
+          "ema20": 598.41,
+          "ema50": 595.36,
+          "rsi14": 88.2
         }
       }
     },
@@ -877,15 +893,15 @@
       "symbol": "AMD",
       "name": "AMD",
       "type": "stock",
-      "technical": -0.01,
-      "macro": 0.349,
+      "technical": -0.007,
+      "macro": 0.29,
       "macro_weight": 0.2,
-      "composite": 0.062,
+      "composite": 0.052,
       "bias": "Neutral",
       "drivers": {
-        "trend": 0.414,
+        "trend": 0.419,
         "day": -1.0,
-        "day_change_pct": -2.9,
+        "day_change_pct": -2.77,
         "spark": [
           476.67,
           465.58,
@@ -896,20 +912,20 @@
           477.57,
           505.74,
           521.1,
-          506.0
+          506.66
         ],
         "trend_components": {
           "price_vs_ema20": 1.0,
-          "ema20_vs_ema50": 0.115,
-          "ema50_slope": -0.115,
-          "rsi": 0.573
+          "ema20_vs_ema50": 0.119,
+          "ema50_slope": -0.112,
+          "rsi": 0.585
         },
         "_raw": {
-          "price": 506.0,
+          "price": 506.66,
           "prev_close": 521.1,
-          "ema20": 484.25,
-          "ema50": 483.14,
-          "rsi14": 61.5
+          "ema20": 484.32,
+          "ema50": 483.17,
+          "rsi14": 61.7
         }
       }
     },
@@ -917,15 +933,15 @@
       "symbol": "AVGO",
       "name": "Broadcom",
       "type": "stock",
-      "technical": -0.608,
-      "macro": 0.349,
+      "technical": -0.578,
+      "macro": 0.29,
       "macro_weight": 0.2,
-      "composite": -0.417,
+      "composite": -0.404,
       "bias": "Bearish",
       "drivers": {
-        "trend": -0.804,
-        "day": -0.152,
-        "day_change_pct": -0.23,
+        "trend": -0.799,
+        "day": -0.061,
+        "day_change_pct": -0.09,
         "spark": [
           371.54,
           368.79,
@@ -936,20 +952,20 @@
           357.9,
           368.56,
           364.38,
-          363.55
+          364.05
         ],
         "trend_components": {
-          "price_vs_ema20": -1.0,
+          "price_vs_ema20": -0.999,
           "ema20_vs_ema50": -1.0,
           "ema50_slope": -1.0,
-          "rsi": -0.018
+          "rsi": 0.001
         },
         "_raw": {
-          "price": 363.55,
+          "price": 364.05,
           "prev_close": 364.38,
-          "ema20": 371.42,
-          "ema50": 380.84,
-          "rsi14": 49.6
+          "ema20": 371.46,
+          "ema50": 380.86,
+          "rsi14": 50.0
         }
       }
     },
@@ -957,15 +973,15 @@
       "symbol": "NFLX",
       "name": "Netflix",
       "type": "stock",
-      "technical": -0.081,
-      "macro": 0.349,
+      "technical": -0.148,
+      "macro": 0.29,
       "macro_weight": 0.2,
-      "composite": 0.005,
+      "composite": -0.06,
       "bias": "Neutral",
       "drivers": {
-        "trend": -0.186,
-        "day": 0.167,
-        "day_change_pct": 0.25,
+        "trend": -0.198,
+        "day": -0.032,
+        "day_change_pct": -0.05,
         "spark": [
           79.84,
           81.72,
@@ -976,20 +992,20 @@
           78.25,
           76.77,
           76.03,
-          76.22
+          75.99
         ],
         "trend_components": {
           "price_vs_ema20": -1.0,
-          "ema20_vs_ema50": 0.315,
-          "ema50_slope": 0.595,
-          "rsi": -0.57
+          "ema20_vs_ema50": 0.307,
+          "ema50_slope": 0.587,
+          "rsi": -0.609
         },
         "_raw": {
-          "price": 76.22,
+          "price": 75.99,
           "prev_close": 76.03,
-          "ema20": 78.49,
-          "ema50": 78.0,
-          "rsi14": 38.6
+          "ema20": 78.47,
+          "ema50": 77.99,
+          "rsi14": 37.8
         }
       }
     },
@@ -997,15 +1013,15 @@
       "symbol": "PLTR",
       "name": "Palantir",
       "type": "stock",
-      "technical": -0.195,
-      "macro": 0.349,
+      "technical": -0.197,
+      "macro": 0.29,
       "macro_weight": 0.2,
-      "composite": -0.086,
+      "composite": -0.1,
       "bias": "Neutral",
       "drivers": {
-        "trend": 0.15,
+        "trend": 0.148,
         "day": -1.0,
-        "day_change_pct": -1.67,
+        "day_change_pct": -1.91,
         "spark": [
           185.93,
           186.29,
@@ -1016,20 +1032,20 @@
           174.33,
           170.3,
           169.53,
-          166.7
+          166.29
         ],
         "trend_components": {
           "price_vs_ema20": -1.0,
           "ema20_vs_ema50": 1.0,
           "ema50_slope": 1.0,
-          "rsi": -0.25
+          "rsi": -0.262
         },
         "_raw": {
-          "price": 166.7,
+          "price": 166.29,
           "prev_close": 169.53,
-          "ema20": 171.58,
-          "ema50": 159.46,
-          "rsi14": 45.0
+          "ema20": 171.54,
+          "ema50": 159.44,
+          "rsi14": 44.8
         }
       }
     },
@@ -1037,15 +1053,15 @@
       "symbol": "COIN",
       "name": "Coinbase",
       "type": "stock",
-      "technical": 0.067,
-      "macro": 0.349,
+      "technical": 0.001,
+      "macro": 0.29,
       "macro_weight": 0.2,
-      "composite": 0.123,
+      "composite": 0.059,
       "bias": "Neutral",
       "drivers": {
-        "trend": 0.369,
-        "day": -0.639,
-        "day_change_pct": -0.96,
+        "trend": 0.338,
+        "day": -0.784,
+        "day_change_pct": -1.18,
         "spark": [
           190.72,
           178.64,
@@ -1056,20 +1072,20 @@
           184.64,
           178.94,
           174.72,
-          173.04
+          172.66
         ],
         "trend_components": {
-          "price_vs_ema20": -0.447,
+          "price_vs_ema20": -0.545,
           "ema20_vs_ema50": 1.0,
           "ema50_slope": 1.0,
-          "rsi": 0.015
+          "rsi": 0.007
         },
         "_raw": {
-          "price": 173.04,
+          "price": 172.66,
           "prev_close": 174.72,
-          "ema20": 174.6,
-          "ema50": 169.49,
-          "rsi14": 50.3
+          "ema20": 174.57,
+          "ema50": 169.48,
+          "rsi14": 50.1
         }
       }
     },
@@ -1077,15 +1093,15 @@
       "symbol": "MU",
       "name": "Micron",
       "type": "stock",
-      "technical": 0.267,
-      "macro": 0.349,
+      "technical": 0.268,
+      "macro": 0.29,
       "macro_weight": 0.2,
-      "composite": 0.283,
+      "composite": 0.272,
       "bias": "Neutral",
       "drivers": {
-        "trend": 0.809,
+        "trend": 0.812,
         "day": -1.0,
-        "day_change_pct": -4.61,
+        "day_change_pct": -4.47,
         "spark": [
           935.39,
           932.86,
@@ -1096,20 +1112,20 @@
           1016.59,
           1000.26,
           1027.77,
-          980.43
+          981.84
         ],
         "trend_components": {
           "price_vs_ema20": 1.0,
           "ema20_vs_ema50": 1.0,
           "ema50_slope": 1.0,
-          "rsi": 0.047
+          "rsi": 0.058
         },
         "_raw": {
-          "price": 980.43,
+          "price": 981.84,
           "prev_close": 1027.77,
-          "ema20": 959.35,
-          "ema50": 930.56,
-          "rsi14": 50.9
+          "ema20": 959.49,
+          "ema50": 930.61,
+          "rsi14": 51.2
         }
       }
     },
@@ -1117,15 +1133,15 @@
       "symbol": "BTC",
       "name": "Bitcoin",
       "type": "crypto",
-      "technical": 0.006,
-      "macro": 0.349,
+      "technical": -0.004,
+      "macro": 0.29,
       "macro_weight": 0.2,
-      "composite": 0.075,
+      "composite": 0.055,
       "bias": "Neutral",
       "drivers": {
-        "trend": 0.417,
-        "day": -0.951,
-        "day_change_pct": -1.43,
+        "trend": 0.411,
+        "day": -0.974,
+        "day_change_pct": -1.46,
         "spark": [
           77403.62,
           77300.48,
@@ -1136,19 +1152,19 @@
           79115.85,
           78438.58,
           78259.52,
-          77143.08
+          77115.66
         ],
         "trend_components": {
-          "price_vs_ema20": 0.069,
+          "price_vs_ema20": 0.053,
           "ema20_vs_ema50": 1.0,
           "ema50_slope": 1.0,
-          "rsi": -0.519
+          "rsi": -0.522
         },
         "_raw": {
-          "price": 77143.08,
+          "price": 77115.66,
           "prev_close": 78259.52,
-          "ema20": 77037.19,
-          "ema50": 72696.62,
+          "ema20": 77034.58,
+          "ema50": 72695.55,
           "rsi14": 39.6
         }
       }
@@ -1158,9 +1174,9 @@
       "name": "DAX \u00b7 Germany",
       "type": "intl",
       "technical": -0.387,
-      "macro": 0.349,
+      "macro": 0.29,
       "macro_weight": 0.4,
-      "composite": -0.093,
+      "composite": -0.116,
       "bias": "Neutral",
       "drivers": {
         "trend": -0.313,
@@ -1198,9 +1214,9 @@
       "name": "Nikkei \u00b7 Japan",
       "type": "intl",
       "technical": -0.225,
-      "macro": 0.349,
+      "macro": 0.29,
       "macro_weight": 0.4,
-      "composite": 0.005,
+      "composite": -0.019,
       "bias": "Neutral",
       "drivers": {
         "trend": -0.265,
@@ -1238,9 +1254,9 @@
       "name": "FTSE \u00b7 UK",
       "type": "intl",
       "technical": -0.283,
-      "macro": 0.349,
+      "macro": 0.29,
       "macro_weight": 0.4,
-      "composite": -0.03,
+      "composite": -0.054,
       "bias": "Neutral",
       "drivers": {
         "trend": -0.241,
