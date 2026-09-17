@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-17T21:15:54.885177+00:00",
+  "generated_at": "2026-09-17T21:31:18.409825+00:00",
   "sentiment": {
-    "score": 0.073,
+    "score": 0.048,
     "label": "Neutral",
     "lean": "neutral",
     "conviction": "Mixed",
@@ -52,6 +52,11 @@
         "name": "calendar",
         "score": 0.384,
         "agrees": false
+      },
+      {
+        "name": "news",
+        "score": -0.342,
+        "agrees": false
       }
     ],
     "exposure": "No clear edge for ES or NQ \u2014 trade your setups on their own merit. MNQ will move more than MES either way (higher beta)."
@@ -63,7 +68,8 @@
     "driver": "Biggest driver right now: the rates trend (10-yr yield) \u2014 the main headwind.",
     "conflict": null,
     "calendar_note": null,
-    "sector_note": "Money is flowing into offensive sectors (tech, discretionary) \u2014 healthy risk-on participation."
+    "sector_note": "Money is flowing into offensive sectors (tech, discretionary) \u2014 healthy risk-on participation.",
+    "news_note": "Watch the tape: the headlines headlines are leaning risk-off right now \u2014 volatility can spike on a single update."
   },
   "macro": {
     "enabled": true,
@@ -136,7 +142,7 @@
         "direction": "risk-on"
       }
     ],
-    "_fetched_at": "2026-09-17T21:15:25.705287+00:00"
+    "_fetched_at": "2026-09-17T21:30:53.168619+00:00"
   },
   "market_state": {
     "enabled": true,
@@ -307,10 +313,72 @@
     }
   },
   "news": {
-    "enabled": false,
-    "note": "fetch failed: HTTPSConnectionPool(host='api.marketaux.com', port=443): Read timed out. (read timeout=20)",
-    "items": [],
-    "net_lean": null
+    "enabled": true,
+    "items": [
+      {
+        "title": "Trump gains a tariff weapon against China and India. Will he use it?",
+        "source": "cnbc.com",
+        "published_at": "2026-09-17T08:46:04.000000Z",
+        "url": "https://www.cnbc.com/2026/09/17/trump-russia-sanctions-india-china-oil-tariffs.html",
+        "category": "trade",
+        "direction": "risk-off",
+        "score": -0.35,
+        "why": "Tariff uncertainty and potential trade escalation risk"
+      },
+      {
+        "title": "100% Trump tariffs loom: Russia sanctions bill passed in US; will it make India stop buying crude from Moscow?",
+        "source": "timesofindia.indiatimes.com",
+        "published_at": "2026-09-17T03:01:23.000000Z",
+        "url": "https://timesofindia.indiatimes.com/business/india-business/100-trump-tariffs-loom-russia-sanctions-bill-passed-in-us-will-it-make-india-stop-buying-crude-from-moscow/articleshow/134300254.cms",
+        "category": "trade",
+        "direction": "risk-off",
+        "score": -0.4,
+        "why": "Aggressive tariff threats create global trade friction"
+      },
+      {
+        "title": "US House passes Russia sanctions bill; 100% tariff threat looms over India",
+        "source": "business-standard.com",
+        "published_at": "2026-09-17T01:54:45.000000Z",
+        "url": "https://www.business-standard.com/economy/news/us-house-passes-russia-sanctions-bill-100-tariff-threat-looms-over-india-126091700062_1.html",
+        "category": "trade",
+        "direction": "risk-off",
+        "score": -0.38,
+        "why": "Steep tariffs threaten supply chains and emerging markets"
+      },
+      {
+        "title": "US House passes Russia sanctions bill, sending it to Trump \u2013 What it means for tariffs on India?",
+        "source": "livemint.com",
+        "published_at": "2026-09-17T00:30:36.000000Z",
+        "url": "https://www.livemint.com/news/us-news/us-house-passes-sweeping-russia-sanctions-bill-sending-it-to-trump-what-it-means-for-tariffs-on-india-11789603677327.html",
+        "category": "trade",
+        "direction": "risk-off",
+        "score": -0.35,
+        "why": "100% tariffs increase economic policy uncertainty"
+      },
+      {
+        "title": "Trump gets new tariff powers as US House passes Russia sanctions bill",
+        "source": "thehindubusinessline.com",
+        "published_at": "2026-09-17T00:03:39.000000Z",
+        "url": "https://www.thehindubusinessline.com/economy/policy/us-house-passes-russia-sanctions-bill-targeting-countries-buying-russian-oil/article71475090.ece",
+        "category": "trade",
+        "direction": "risk-off",
+        "score": -0.37,
+        "why": "Broad tariff powers risk trade war escalation"
+      },
+      {
+        "title": "House set to pass sweeping Russia sanctions bill honoring Lindsey Graham",
+        "source": "cnbc.com",
+        "published_at": "2026-09-16T15:38:40.000000Z",
+        "url": "https://www.cnbc.com/2026/09/16/russia-sanctions-bill-lindsey-graham-congress.html",
+        "category": "political",
+        "direction": "neutral",
+        "score": -0.15,
+        "why": "Bill passage signals policy direction, limited immediate impact"
+      }
+    ],
+    "net_lean": -0.342,
+    "mode": "AI",
+    "_fetched_at": "2026-09-17T21:31:18.409701+00:00"
   },
   "megacap_breadth": 0.598,
   "instruments": [
@@ -998,15 +1066,15 @@
       "symbol": "BTC",
       "name": "Bitcoin",
       "type": "crypto",
-      "technical": 0.235,
+      "technical": 0.244,
       "macro": 0.305,
       "macro_weight": 0.2,
-      "composite": 0.249,
+      "composite": 0.256,
       "bias": "Neutral",
       "drivers": {
-        "trend": 0.222,
-        "day": 0.265,
-        "day_change_pct": 0.4,
+        "trend": 0.226,
+        "day": 0.286,
+        "day_change_pct": 0.43,
         "spark": [
           78438.58,
           78259.52,
@@ -1017,20 +1085,20 @@
           78163.38,
           75612.51,
           76150.32,
-          76452.63
+          76477.38
         ],
         "trend_components": {
-          "price_vs_ema20": -0.261,
+          "price_vs_ema20": -0.247,
           "ema20_vs_ema50": 1.0,
           "ema50_slope": 1.0,
           "rsi": -1.0
         },
         "_raw": {
-          "price": 76452.63,
+          "price": 76477.38,
           "prev_close": 76150.32,
-          "ema20": 76854.19,
-          "ema50": 73678.24,
-          "rsi14": 29.8
+          "ema20": 76856.55,
+          "ema50": 73679.21,
+          "rsi14": 29.9
         }
       }
     },
