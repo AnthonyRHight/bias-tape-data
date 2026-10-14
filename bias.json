@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-14T21:01:18.712984+00:00",
+  "generated_at": "2026-10-14T21:15:44.371151+00:00",
   "sentiment": {
-    "score": -0.131,
+    "score": -0.121,
     "label": "Risk-Off",
     "lean": "short",
     "conviction": "Moderate",
@@ -10,7 +10,7 @@
     "layers": [
       {
         "name": "price",
-        "score": -0.361,
+        "score": -0.356,
         "agrees": true
       },
       {
@@ -52,6 +52,11 @@
         "name": "calendar",
         "score": -0.26,
         "agrees": true
+      },
+      {
+        "name": "news",
+        "score": 0.021,
+        "agrees": false
       }
     ],
     "exposure": "Hits hardest: NQ (tech, rate-sensitive) and RTY (small caps). YM (Dow) is most resilient. For your MNQ vs MES: MNQ carries more downside here \u2014 size accordingly."
@@ -62,8 +67,9 @@
     "lean": "neutral",
     "driver": "Biggest driver right now: the yield curve \u2014 the main support.",
     "conflict": null,
-    "calendar_note": "Producer Price Index Month-over-Month drops in 15h 29m \u2014 expect a volatility spike around it. Many traders cut size into major releases.",
-    "sector_note": "Money is rotating into defensive sectors (utilities, staples) \u2014 a quiet risk-off tell even if the headline indexes look calm."
+    "calendar_note": "Producer Price Index Month-over-Month drops in 15h 14m \u2014 expect a volatility spike around it. Many traders cut size into major releases.",
+    "sector_note": "Money is rotating into defensive sectors (utilities, staples) \u2014 a quiet risk-off tell even if the headline indexes look calm.",
+    "news_note": null
   },
   "macro": {
     "enabled": true,
@@ -104,7 +110,7 @@
         "impact": "Major",
         "forecast": "0.5",
         "previous": "0.4",
-        "minutes_until": 929,
+        "minutes_until": 914,
         "beat_is": null,
         "watch": "Not in the scored set \u2014 informational only."
       },
@@ -114,7 +120,7 @@
         "impact": "Major",
         "forecast": "0.3",
         "previous": "1.2",
-        "minutes_until": 929,
+        "minutes_until": 914,
         "beat_is": "risk-on",
         "miss_is": "risk-off",
         "consensus_lean": "risk-off",
@@ -126,7 +132,7 @@
         "impact": "Major",
         "forecast": null,
         "previous": "",
-        "minutes_until": 1829,
+        "minutes_until": 1814,
         "beat_is": null,
         "watch": "Not in the scored set \u2014 informational only."
       },
@@ -136,7 +142,7 @@
         "impact": "Major",
         "forecast": null,
         "previous": "1403000.000",
-        "minutes_until": 8129,
+        "minutes_until": 8114,
         "beat_is": null,
         "watch": "Not in the scored set \u2014 informational only."
       },
@@ -146,7 +152,7 @@
         "impact": "Major",
         "forecast": null,
         "previous": "1275000.000",
-        "minutes_until": 8129,
+        "minutes_until": 8114,
         "beat_is": null,
         "watch": "Not in the scored set \u2014 informational only."
       }
@@ -203,7 +209,7 @@
         "direction": "risk-off"
       }
     ],
-    "_fetched_at": "2026-10-14T21:00:47.553408+00:00"
+    "_fetched_at": "2026-10-14T21:15:26.846413+00:00"
   },
   "market_state": {
     "enabled": true,
@@ -279,13 +285,13 @@
       {
         "symbol": "DX-Y.NYB",
         "name": "US Dollar",
-        "day_pct": 0.35,
+        "day_pct": 0.36,
         "signal": "risk-off"
       },
       {
         "symbol": "GC=F",
         "name": "Gold",
-        "day_pct": -1.33,
+        "day_pct": -1.2,
         "signal": "risk-on"
       },
       {
@@ -303,7 +309,7 @@
       {
         "symbol": "CL=F",
         "name": "Crude Oil",
-        "day_pct": 1.03,
+        "day_pct": 1.09,
         "signal": "growth"
       }
     ],
@@ -346,12 +352,12 @@
       "ES": {
         "prior_high": 7863.25,
         "prior_low": 7834.5,
-        "prior_close": 7856.25,
+        "prior_close": 7856.0,
         "overnight_high": 7879.75,
         "overnight_low": 7821.25,
-        "open": 7823.75,
-        "last": 7763.75,
-        "gap_pts": -32.5,
+        "open": 7824.0,
+        "last": 7765.25,
+        "gap_pts": -32.0,
         "gap_pct": -0.41,
         "open_location": "inside",
         "vwap": 7780.67,
@@ -364,20 +370,82 @@
         "overnight_high": 30891.5,
         "overnight_low": 30535.0,
         "open": 30551.25,
-        "last": 30134.75,
+        "last": 30139.25,
         "gap_pts": -237.75,
         "gap_pct": -0.77,
         "open_location": "inside",
-        "vwap": 30338.05,
+        "vwap": 30338.02,
         "note": "NQ opened INSIDE the overnight range (30535.0-30891.5) \u2014 balanced and rotational. Favor fading the edges until one side breaks and holds; a clean break of either end is the cue to trade with it."
       }
     }
   },
   "news": {
-    "enabled": false,
-    "note": "fetch failed: HTTPSConnectionPool(host='api.marketaux.com', port=443): Read timed out. (read timeout=20)",
-    "items": [],
-    "net_lean": null
+    "enabled": true,
+    "items": [
+      {
+        "title": "Oil up as Iran deploys new tactics to target Hormuz ships",
+        "source": "rte.ie",
+        "published_at": "2026-10-14T08:42:27.000000Z",
+        "url": "https://www.rte.ie/news/business/2026/1014/1595326-world-oil-prices/",
+        "category": "energy",
+        "direction": "risk-off",
+        "score": -0.6,
+        "why": "Supply disruption risk via Hormuz strait escalation"
+      },
+      {
+        "title": "Trump says he does not believe China and Russia are helping Iran at all",
+        "source": "business-standard.com",
+        "published_at": "2026-10-13T18:12:14.000000Z",
+        "url": "https://www.business-standard.com/world-news/trump-says-he-does-not-believe-china-and-russia-are-helping-iran-at-all-126101301230_1.html",
+        "category": "geopolitical",
+        "direction": "neutral",
+        "score": 0.0,
+        "why": "Trump downplaying Iran tensions, but unverified claims"
+      },
+      {
+        "title": "US midterms: Iran war, Russia diesel supply deal expose 'growing' divide between Trump, Republicans",
+        "source": "livemint.com",
+        "published_at": "2026-10-13T08:24:58.000000Z",
+        "url": "https://www.livemint.com/news/us-news/us-midterms-iran-war-russia-diesel-supply-deal-expose-growing-divide-between-trump-republicans-11791878850556.html",
+        "category": "political",
+        "direction": "risk-off",
+        "score": -0.5,
+        "why": "Domestic political friction, rising fuel costs pressure markets"
+      },
+      {
+        "title": "Oil dips as Russia diesel supply prospects counter Gulf supply risks",
+        "source": "business-standard.com",
+        "published_at": "2026-10-13T02:31:44.000000Z",
+        "url": "https://www.business-standard.com/markets/commodities/oil-dips-as-russia-diesel-supply-prospects-counter-gulf-supply-risks-126101300065_1.html",
+        "category": "energy",
+        "direction": "risk-on",
+        "score": 0.4,
+        "why": "Oil supply relief from Russia offsetting Gulf risks"
+      },
+      {
+        "title": "Global Energy Markets Volatile as Trump Claims Russia-Ukraine Ceasefire; OPEC Slashes Demand Outlook",
+        "source": "thestockmarketwatch.com",
+        "published_at": "2026-10-12T08:38:23.000000Z",
+        "url": "https://www2.stockmarketwatch.com/stock-market-news/global-energy-markets-volatile-as-trump-claims-russia-ukraine-ceasefire-opec-slashes-demand-outlook/72861/",
+        "category": "geopolitical",
+        "direction": "risk-on",
+        "score": 0.7,
+        "why": "Russia-Ukraine ceasefire reduces energy supply disruption risk"
+      },
+      {
+        "title": "Oil prices today: Brent crude declines as Trump announces Russia-Ukraine energy truce",
+        "source": "timesofindia.indiatimes.com",
+        "published_at": "2026-10-12T04:35:20.000000Z",
+        "url": "https://timesofindia.indiatimes.com/business/international-business/oil-prices-today-brent-crude-declines-as-trump-announces-russia-ukraine-energy-truce/articleshow/134882273.cms",
+        "category": "energy",
+        "direction": "risk-on",
+        "score": 0.6,
+        "why": "Ceasefire prospects increase Russian energy exports, lower inflation"
+      }
+    ],
+    "net_lean": 0.021,
+    "mode": "AI",
+    "_fetched_at": "2026-10-14T21:15:44.371017+00:00"
   },
   "megacap_breadth": 0.111,
   "instruments": [
@@ -385,15 +453,15 @@
       "symbol": "ES",
       "name": "S&P 500 (E-mini)",
       "type": "index",
-      "technical": -0.11,
+      "technical": -0.103,
       "macro": 0.055,
       "macro_weight": 0.4,
-      "composite": -0.044,
+      "composite": -0.04,
       "bias": "Neutral",
       "drivers": {
-        "trend": 0.177,
-        "day": -0.781,
-        "day_change_pct": -1.17,
+        "trend": 0.182,
+        "day": -0.768,
+        "day_change_pct": -1.15,
         "spark": [
           7724.0,
           7777.25,
@@ -404,20 +472,20 @@
           7859.75,
           7858.0,
           7855.75,
-          7763.75
+          7765.25
         ],
         "trend_components": {
-          "price_vs_ema20": -0.134,
+          "price_vs_ema20": -0.125,
           "ema20_vs_ema50": 0.435,
-          "ema50_slope": 0.449,
-          "rsi": -0.017
+          "ema50_slope": 0.45,
+          "rsi": -0.009
         },
         "_raw": {
-          "price": 7763.75,
+          "price": 7765.25,
           "prev_close": 7855.75,
-          "ema20": 7784.62,
-          "ema50": 7717.55,
-          "rsi14": 49.7
+          "ema20": 7784.76,
+          "ema50": 7717.61,
+          "rsi14": 49.8
         }
       }
     },
@@ -425,15 +493,15 @@
       "symbol": "NQ",
       "name": "Nasdaq-100 (E-mini)",
       "type": "index",
-      "technical": -0.235,
+      "technical": -0.232,
       "macro": 0.055,
       "macro_weight": 0.4,
-      "composite": -0.119,
+      "composite": -0.117,
       "bias": "Neutral",
       "drivers": {
-        "trend": 0.092,
+        "trend": 0.097,
         "day": -1.0,
-        "day_change_pct": -2.14,
+        "day_change_pct": -2.12,
         "spark": [
           30760.5,
           31061.75,
@@ -444,20 +512,20 @@
           31108.75,
           30898.25,
           30791.5,
-          30131.75
+          30139.25
         ],
         "trend_components": {
-          "price_vs_ema20": -0.812,
-          "ema20_vs_ema50": 0.837,
-          "ema50_slope": 0.931,
-          "rsi": -0.53
+          "price_vs_ema20": -0.801,
+          "ema20_vs_ema50": 0.838,
+          "ema50_slope": 0.932,
+          "rsi": -0.526
         },
         "_raw": {
-          "price": 30131.75,
+          "price": 30139.25,
           "prev_close": 30791.5,
-          "ema20": 30629.36,
-          "ema50": 30124.95,
-          "rsi14": 39.4
+          "ema20": 30630.08,
+          "ema50": 30125.24,
+          "rsi14": 39.5
         }
       }
     },
@@ -465,15 +533,15 @@
       "symbol": "YM",
       "name": "Dow (E-mini)",
       "type": "index",
-      "technical": -0.149,
+      "technical": -0.14,
       "macro": 0.055,
       "macro_weight": 0.4,
-      "composite": -0.068,
+      "composite": -0.062,
       "bias": "Neutral",
       "drivers": {
-        "trend": -0.157,
-        "day": -0.13,
-        "day_change_pct": -0.19,
+        "trend": -0.151,
+        "day": -0.114,
+        "day_change_pct": -0.17,
         "spark": [
           51241.0,
           51477.0,
@@ -484,20 +552,20 @@
           51926.0,
           52110.0,
           51935.0,
-          51834.0
+          51846.0
         ],
         "trend_components": {
-          "price_vs_ema20": -0.07,
-          "ema20_vs_ema50": -0.297,
+          "price_vs_ema20": -0.059,
+          "ema20_vs_ema50": -0.296,
           "ema50_slope": -0.318,
-          "rsi": 0.09
+          "rsi": 0.1
         },
         "_raw": {
-          "price": 51834.0,
+          "price": 51846.0,
           "prev_close": 51935.0,
-          "ema20": 51906.44,
-          "ema50": 52216.35,
-          "rsi14": 51.8
+          "ema20": 51907.59,
+          "ema50": 52216.82,
+          "rsi14": 52.0
         }
       }
     },
@@ -505,7 +573,7 @@
       "symbol": "RTY",
       "name": "Russell 2000 (E-mini)",
       "type": "index",
-      "technical": -0.952,
+      "technical": -0.951,
       "macro": 0.055,
       "macro_weight": 0.4,
       "composite": -0.549,
@@ -513,7 +581,7 @@
       "drivers": {
         "trend": -0.931,
         "day": -1.0,
-        "day_change_pct": -2.0,
+        "day_change_pct": -1.97,
         "spark": [
           2826.9,
           2850.9,
@@ -524,20 +592,20 @@
           2822.1,
           2812.2,
           2800.1,
-          2744.0
+          2744.8
         ],
         "trend_components": {
           "price_vs_ema20": -1.0,
-          "ema20_vs_ema50": -0.887,
-          "ema50_slope": -0.837,
+          "ema20_vs_ema50": -0.886,
+          "ema50_slope": -0.836,
           "rsi": -1.0
         },
         "_raw": {
-          "price": 2744.0,
+          "price": 2744.8,
           "prev_close": 2800.1,
-          "ema20": 2839.8,
-          "ema50": 2891.1,
-          "rsi14": 26.8
+          "ema20": 2839.88,
+          "ema50": 2891.14,
+          "rsi14": 26.9
         }
       }
     },
@@ -1065,15 +1133,15 @@
       "symbol": "BTC",
       "name": "Bitcoin",
       "type": "crypto",
-      "technical": -0.155,
+      "technical": -0.157,
       "macro": 0.055,
       "macro_weight": 0.2,
-      "composite": -0.113,
+      "composite": -0.115,
       "bias": "Neutral",
       "drivers": {
-        "trend": 0.207,
+        "trend": 0.204,
         "day": -1.0,
-        "day_change_pct": -1.68,
+        "day_change_pct": -1.7,
         "spark": [
           85786.59,
           85557.56,
@@ -1084,19 +1152,19 @@
           83679.47,
           81762.56,
           83095.12,
-          81697.3
+          81680.25
         ],
         "trend_components": {
-          "price_vs_ema20": -0.771,
+          "price_vs_ema20": -0.78,
           "ema20_vs_ema50": 1.0,
           "ema50_slope": 1.0,
-          "rsi": -0.308
+          "rsi": -0.31
         },
         "_raw": {
-          "price": 81697.3,
+          "price": 81680.25,
           "prev_close": 83095.12,
-          "ema20": 82976.1,
-          "ema50": 80266.0,
+          "ema20": 82974.48,
+          "ema50": 80265.33,
           "rsi14": 43.8
         }
       }
