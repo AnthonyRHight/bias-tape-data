@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-10-16T12:31:03.442609+00:00",
+  "generated_at": "2026-10-16T12:45:48.096879+00:00",
   "sentiment": {
-    "score": 0.153,
+    "score": 0.14,
     "label": "Risk-On",
     "lean": "long",
-    "conviction": "High",
+    "conviction": "Moderate",
     "agree": 4,
-    "total": 5,
+    "total": 6,
     "layers": [
       {
         "name": "price",
-        "score": -0.057,
+        "score": -0.026,
         "agrees": false
       },
       {
@@ -52,6 +52,11 @@
         "name": "calendar",
         "score": 1.0,
         "agrees": true
+      },
+      {
+        "name": "news",
+        "score": -0.168,
+        "agrees": false
       }
     ],
     "exposure": "Benefits most: NQ and RTY (high beta lead the way up). YM lags. For your MNQ vs MES: MNQ has more upside \u2014 but also more whip."
@@ -63,7 +68,8 @@
     "driver": "Biggest driver right now: the yield curve \u2014 the main support.",
     "conflict": null,
     "calendar_note": "Recent data surprised risk-on (long) \u2014 that's part of today's tilt.",
-    "sector_note": null
+    "sector_note": null,
+    "news_note": null
   },
   "macro": {
     "enabled": true,
@@ -104,7 +110,7 @@
         "impact": "Major",
         "forecast": "1400000.00",
         "previous": "1403000.000",
-        "minutes_until": 5759,
+        "minutes_until": 5744,
         "beat_is": null,
         "watch": "Not in the scored set \u2014 informational only."
       },
@@ -114,7 +120,7 @@
         "impact": "Major",
         "forecast": "1300000.00",
         "previous": "1275000.000",
-        "minutes_until": 5759,
+        "minutes_until": 5744,
         "beat_is": null,
         "watch": "Not in the scored set \u2014 informational only."
       }
@@ -179,7 +185,7 @@
         "actual": "3990000.00"
       }
     ],
-    "_fetched_at": "2026-10-16T12:30:33.469070+00:00"
+    "_fetched_at": "2026-10-16T12:45:32.906753+00:00"
   },
   "market_state": {
     "enabled": true,
@@ -255,13 +261,13 @@
       {
         "symbol": "DX-Y.NYB",
         "name": "US Dollar",
-        "day_pct": -0.28,
+        "day_pct": -0.3,
         "signal": "risk-on"
       },
       {
         "symbol": "GC=F",
         "name": "Gold",
-        "day_pct": 0.65,
+        "day_pct": 0.76,
         "signal": "risk-off"
       },
       {
@@ -273,13 +279,13 @@
       {
         "symbol": "^VIX",
         "name": "VIX (fear)",
-        "day_pct": -2.43,
+        "day_pct": -2.73,
         "signal": "risk-on"
       },
       {
         "symbol": "CL=F",
         "name": "Crude Oil",
-        "day_pct": -1.86,
+        "day_pct": -2.34,
         "signal": "slowing"
       }
     ],
@@ -326,7 +332,7 @@
         "overnight_high": 7809.5,
         "overnight_low": 7774.75,
         "open": null,
-        "last": 7799.75,
+        "last": 7804.75,
         "gap_pts": null,
         "gap_pct": null,
         "open_location": null,
@@ -336,11 +342,11 @@
       "NQ": {
         "prior_high": 30196.75,
         "prior_low": 29622.5,
-        "prior_close": 30141.0,
+        "prior_close": 30141.25,
         "overnight_high": 30225.0,
         "overnight_low": 29959.25,
         "open": null,
-        "last": 30097.0,
+        "last": 30105.0,
         "gap_pts": null,
         "gap_pct": null,
         "open_location": null,
@@ -350,10 +356,72 @@
     }
   },
   "news": {
-    "enabled": false,
-    "note": "fetch failed: HTTPSConnectionPool(host='api.marketaux.com', port=443): Read timed out. (read timeout=20)",
-    "items": [],
-    "net_lean": null
+    "enabled": true,
+    "items": [
+      {
+        "title": "US considers removing sanctions on some shadow fleet vessels to cut freight rates, official says",
+        "source": "economictimes.indiatimes.com",
+        "published_at": "2026-10-16T02:24:51.000000Z",
+        "url": "https://economictimes.indiatimes.com/news/international/world-news/us-considers-removing-sanctions-on-some-shadow-fleet-vessels-to-cut-freight-rates-official-says/articleshow/134980507.cms",
+        "category": "trade",
+        "direction": "neutral",
+        "score": 0.1,
+        "why": "Sanctions relief modest, freight rates unlikely to drop"
+      },
+      {
+        "title": "Trump's shadow fleet loophole: Easing US sanctions on oil tankers may not lower fuel costs",
+        "source": "economictimes.indiatimes.com",
+        "published_at": "2026-10-15T14:28:55.000000Z",
+        "url": "https://economictimes.indiatimes.com/news/international/world-news/trump-shadow-fleet-loophole-easing-us-sanctions-on-oil-tankers-may-not-lower-fuel-costs/articleshow/134969508.cms",
+        "category": "trade",
+        "direction": "neutral",
+        "score": 0.05,
+        "why": "Easing sanctions positive but effectiveness uncertain"
+      },
+      {
+        "title": "Brent Crude $104 as US Weighs Tanker Sanctions: Bull $110",
+        "source": "financefeeds.com",
+        "published_at": "2026-10-15T06:51:11.000000Z",
+        "url": "https://financefeeds.com/brent-crude-oil-price-104-us-weighs-tanker-sanctions-easing-hormuz-sinking-bull-110-bear-98/",
+        "category": "energy",
+        "direction": "risk-off",
+        "score": -0.3,
+        "why": "Oil elevated, geopolitical risk near Hormuz rising"
+      },
+      {
+        "title": "Oil prices fall as US weighs easing sanctions on West Asian crude supply",
+        "source": "business-standard.com",
+        "published_at": "2026-10-15T01:58:14.000000Z",
+        "url": "https://www.business-standard.com/markets/commodities/oil-prices-fall-as-us-weighs-easing-sanctions-on-west-asian-crude-supply-126101500082_1.html",
+        "category": "energy",
+        "direction": "neutral",
+        "score": 0.0,
+        "why": "Offsetting factors: sanctions relief bearish, Hormuz risk bullish"
+      },
+      {
+        "title": "Here's the inflation breakdown for September 2026 \u2014 in one chart",
+        "source": "cnbc.com",
+        "published_at": "2026-10-14T14:44:05.000000Z",
+        "url": "https://www.cnbc.com/2026/10/14/cpi-inflation-breakdown-september-2026.html",
+        "category": "monetary",
+        "direction": "risk-off",
+        "score": -0.6,
+        "why": "Hot inflation 3.7% from Iran war, stagflation risk"
+      },
+      {
+        "title": "Oil up as Iran deploys new tactics to target Hormuz ships",
+        "source": "rte.ie",
+        "published_at": "2026-10-14T08:42:27.000000Z",
+        "url": "https://www.rte.ie/news/business/2026/1014/1595326-world-oil-prices/",
+        "category": "geopolitical",
+        "direction": "risk-off",
+        "score": -0.5,
+        "why": "Iran escalating Hormuz attacks, supply disruption threat"
+      }
+    ],
+    "net_lean": -0.168,
+    "mode": "AI",
+    "_fetched_at": "2026-10-16T12:45:48.096742+00:00"
   },
   "megacap_breadth": 0.342,
   "instruments": [
@@ -361,15 +429,15 @@
       "symbol": "ES",
       "name": "S&P 500 (E-mini)",
       "type": "index",
-      "technical": 0.233,
+      "technical": 0.257,
       "macro": 0.457,
       "macro_weight": 0.4,
-      "composite": 0.323,
-      "bias": "Neutral",
+      "composite": 0.337,
+      "bias": "Bullish",
       "drivers": {
-        "trend": 0.301,
-        "day": 0.073,
-        "day_change_pct": 0.11,
+        "trend": 0.317,
+        "day": 0.118,
+        "day_change_pct": 0.18,
         "spark": [
           7826.25,
           7874.0,
@@ -380,20 +448,20 @@
           7855.75,
           7770.25,
           7791.0,
-          7799.5
+          7804.75
         ],
         "trend_components": {
-          "price_vs_ema20": 0.08,
-          "ema20_vs_ema50": 0.407,
-          "ema50_slope": 0.444,
-          "rsi": 0.322
+          "price_vs_ema20": 0.11,
+          "ema20_vs_ema50": 0.409,
+          "ema50_slope": 0.446,
+          "rsi": 0.349
         },
         "_raw": {
-          "price": 7799.5,
+          "price": 7804.75,
           "prev_close": 7791.0,
-          "ema20": 7787.09,
-          "ema50": 7724.19,
-          "rsi14": 56.4
+          "ema20": 7787.59,
+          "ema50": 7724.39,
+          "rsi14": 57.0
         }
       }
     },
@@ -401,15 +469,15 @@
       "symbol": "NQ",
       "name": "Nasdaq-100 (E-mini)",
       "type": "index",
-      "technical": -0.006,
+      "technical": 0.009,
       "macro": 0.457,
       "macro_weight": 0.4,
-      "composite": 0.179,
+      "composite": 0.188,
       "bias": "Neutral",
       "drivers": {
-        "trend": 0.04,
-        "day": -0.112,
-        "day_change_pct": -0.17,
+        "trend": 0.048,
+        "day": -0.083,
+        "day_change_pct": -0.13,
         "spark": [
           31317.75,
           31483.25,
@@ -420,20 +488,20 @@
           30791.5,
           30182.75,
           30143.75,
-          30093.0
+          30106.0
         ],
         "trend_components": {
-          "price_vs_ema20": -0.732,
-          "ema20_vs_ema50": 0.683,
-          "ema50_slope": 0.721,
-          "rsi": -0.458
+          "price_vs_ema20": -0.713,
+          "ema20_vs_ema50": 0.684,
+          "ema50_slope": 0.722,
+          "rsi": -0.447
         },
         "_raw": {
-          "price": 30093.0,
+          "price": 30106.0,
           "prev_close": 30143.75,
-          "ema20": 30540.41,
-          "ema50": 30129.09,
-          "rsi14": 40.8
+          "ema20": 30541.65,
+          "ema50": 30129.6,
+          "rsi14": 41.1
         }
       }
     },
@@ -441,15 +509,15 @@
       "symbol": "YM",
       "name": "Dow (E-mini)",
       "type": "index",
-      "technical": 0.07,
+      "technical": 0.123,
       "macro": 0.457,
       "macro_weight": 0.4,
-      "composite": 0.225,
+      "composite": 0.257,
       "bias": "Neutral",
       "drivers": {
-        "trend": 0.11,
-        "day": -0.023,
-        "day_change_pct": -0.03,
+        "trend": 0.143,
+        "day": 0.075,
+        "day_change_pct": 0.11,
         "spark": [
           51558.0,
           51816.0,
@@ -460,20 +528,20 @@
           51935.0,
           51858.0,
           52430.0,
-          52412.0
+          52489.0
         ],
         "trend_components": {
-          "price_vs_ema20": 0.395,
-          "ema20_vs_ema50": -0.222,
-          "ema50_slope": -0.19,
-          "rsi": 0.473
+          "price_vs_ema20": 0.462,
+          "ema20_vs_ema50": -0.217,
+          "ema50_slope": -0.186,
+          "rsi": 0.529
         },
         "_raw": {
-          "price": 52412.0,
+          "price": 52489.0,
           "prev_close": 52430.0,
-          "ema20": 52001.58,
-          "ema50": 52233.04,
-          "rsi14": 59.5
+          "ema20": 52008.91,
+          "ema50": 52236.06,
+          "rsi14": 60.6
         }
       }
     },
@@ -481,15 +549,15 @@
       "symbol": "RTY",
       "name": "Russell 2000 (E-mini)",
       "type": "index",
-      "technical": -0.525,
+      "technical": -0.493,
       "macro": 0.457,
       "macro_weight": 0.4,
-      "composite": -0.132,
+      "composite": -0.113,
       "bias": "Neutral",
       "drivers": {
-        "trend": -0.788,
-        "day": 0.089,
-        "day_change_pct": 0.13,
+        "trend": -0.769,
+        "day": 0.149,
+        "day_change_pct": 0.22,
         "spark": [
           2867.8,
           2848.2,
@@ -500,20 +568,20 @@
           2800.1,
           2745.0,
           2781.8,
-          2785.5
+          2788.0
         ],
         "trend_components": {
-          "price_vs_ema20": -0.781,
-          "ema20_vs_ema50": -0.923,
-          "ema50_slope": -0.871,
-          "rsi": -0.523
+          "price_vs_ema20": -0.741,
+          "ema20_vs_ema50": -0.921,
+          "ema50_slope": -0.869,
+          "rsi": -0.494
         },
         "_raw": {
-          "price": 2785.5,
+          "price": 2788.0,
           "prev_close": 2781.8,
-          "ema20": 2829.71,
-          "ema50": 2882.95,
-          "rsi14": 39.5
+          "ema20": 2829.95,
+          "ema50": 2883.05,
+          "rsi14": 40.1
         }
       }
     },
@@ -1041,15 +1109,15 @@
       "symbol": "BTC",
       "name": "Bitcoin",
       "type": "crypto",
-      "technical": 0.222,
+      "technical": 0.175,
       "macro": 0.457,
       "macro_weight": 0.2,
-      "composite": 0.269,
+      "composite": 0.231,
       "bias": "Neutral",
       "drivers": {
-        "trend": 0.279,
-        "day": 0.087,
-        "day_change_pct": 0.13,
+        "trend": 0.254,
+        "day": -0.008,
+        "day_change_pct": -0.01,
         "spark": [
           83275.93,
           81676.34,
@@ -1060,20 +1128,20 @@
           83095.12,
           81562.49,
           82141.46,
-          82249.08
+          82131.01
         ],
         "trend_components": {
-          "price_vs_ema20": -0.347,
+          "price_vs_ema20": -0.412,
           "ema20_vs_ema50": 1.0,
-          "ema50_slope": 0.849,
-          "rsi": -0.394
+          "ema50_slope": 0.845,
+          "rsi": -0.418
         },
         "_raw": {
-          "price": 82249.08,
+          "price": 82131.01,
           "prev_close": 82141.46,
-          "ema20": 82824.43,
-          "ema50": 80410.15,
-          "rsi14": 42.1
+          "ema20": 82813.19,
+          "ema50": 80405.52,
+          "rsi14": 41.6
         }
       }
     },
@@ -1081,15 +1149,15 @@
       "symbol": "DAX",
       "name": "DAX \u00b7 Germany",
       "type": "intl",
-      "technical": 0.222,
+      "technical": 0.224,
       "macro": 0.457,
       "macro_weight": 0.4,
-      "composite": 0.316,
+      "composite": 0.317,
       "bias": "Neutral",
       "drivers": {
-        "trend": 0.071,
-        "day": 0.575,
-        "day_change_pct": 0.86,
+        "trend": 0.072,
+        "day": 0.579,
+        "day_change_pct": 0.87,
         "spark": [
           25254.21,
           25449.19,
@@ -1100,19 +1168,19 @@
           25259.9,
           25298.61,
           25382.62,
-          25601.64
+          25602.95
         ],
         "trend_components": {
-          "price_vs_ema20": 0.499,
+          "price_vs_ema20": 0.501,
           "ema20_vs_ema50": -0.236,
           "ema50_slope": -0.264,
-          "rsi": 0.23
+          "rsi": 0.231
         },
         "_raw": {
-          "price": 25601.64,
+          "price": 25602.95,
           "prev_close": 25382.62,
-          "ema20": 25348.8,
-          "ema50": 25469.13,
+          "ema20": 25348.93,
+          "ema50": 25469.18,
           "rsi14": 54.6
         }
       }
@@ -1161,15 +1229,15 @@
       "symbol": "FTSE",
       "name": "FTSE \u00b7 UK",
       "type": "intl",
-      "technical": 0.178,
+      "technical": 0.198,
       "macro": 0.457,
       "macro_weight": 0.4,
-      "composite": 0.29,
+      "composite": 0.302,
       "bias": "Neutral",
       "drivers": {
-        "trend": 0.283,
-        "day": -0.065,
-        "day_change_pct": -0.1,
+        "trend": 0.295,
+        "day": -0.028,
+        "day_change_pct": -0.04,
         "spark": [
           10497.9,
           10541.7,
@@ -1180,20 +1248,20 @@
           10650.3,
           10724.9,
           10840.4,
-          10829.78
+          10835.79
         ],
         "trend_components": {
-          "price_vs_ema20": 0.815,
-          "ema20_vs_ema50": -0.063,
-          "ema50_slope": -0.11,
-          "rsi": 0.406
+          "price_vs_ema20": 0.84,
+          "ema20_vs_ema50": -0.061,
+          "ema50_slope": -0.108,
+          "rsi": 0.426
         },
         "_raw": {
-          "price": 10829.78,
+          "price": 10835.79,
           "prev_close": 10840.4,
-          "ema20": 10656.11,
-          "ema50": 10669.56,
-          "rsi14": 58.1
+          "ema20": 10656.68,
+          "ema50": 10669.8,
+          "rsi14": 58.5
         }
       }
     }
