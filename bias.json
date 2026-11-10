@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-10T11:01:15.790731+00:00",
+  "generated_at": "2026-11-10T11:15:30.501938+00:00",
   "sentiment": {
     "score": 0.123,
     "label": "Risk-On",
@@ -10,7 +10,7 @@
     "layers": [
       {
         "name": "price",
-        "score": -0.22,
+        "score": -0.222,
         "agrees": false
       },
       {
@@ -170,13 +170,13 @@
       {
         "symbol": "DX-Y.NYB",
         "name": "US Dollar",
-        "day_pct": 0.05,
+        "day_pct": 0.04,
         "signal": "neutral"
       },
       {
         "symbol": "GC=F",
         "name": "Gold",
-        "day_pct": -0.77,
+        "day_pct": -0.82,
         "signal": "risk-on"
       },
       {
@@ -188,13 +188,13 @@
       {
         "symbol": "^VIX",
         "name": "VIX (fear)",
-        "day_pct": 1.0,
+        "day_pct": 0.8,
         "signal": "risk-off"
       },
       {
         "symbol": "CL=F",
         "name": "Crude Oil",
-        "day_pct": -1.72,
+        "day_pct": -1.3,
         "signal": "slowing"
       }
     ],
@@ -241,7 +241,7 @@
         "overnight_high": 7598.75,
         "overnight_low": 7566.0,
         "open": null,
-        "last": 7574.25,
+        "last": 7573.5,
         "gap_pts": null,
         "gap_pct": null,
         "open_location": null,
@@ -255,7 +255,7 @@
         "overnight_high": 28109.0,
         "overnight_low": 27869.0,
         "open": null,
-        "last": 27915.5,
+        "last": 27908.25,
         "gap_pts": null,
         "gap_pct": null,
         "open_location": null,
@@ -266,7 +266,7 @@
   },
   "news": {
     "enabled": false,
-    "note": "fetch failed: HTTPSConnectionPool(host='api.marketaux.com', port=443): Read timed out. (read timeout=20)",
+    "note": "fetch failed: 502 Server Error: Bad Gateway for url: https://api.marketaux.com/v1/news/all?api_token=vvdpLEcwaTgCCwYEXUjFhS5cZFJO7KEHOPSTPBpW&search=Trump+%7C+tariff+%7C+Iran+%7C+Hormuz+%7C+war+%7C+Fed+%7C+Powell+%7C+inflation+%7C+CPI+%7C+recession+%7C+oil+%7C+OPEC+%7C+sanctions+%7C+China+%7C+Russia+%7C+Ukraine+%7C+Israel+%7C+Taiwan&language=en&filter_entities=false&published_after=2026-11-07&limit=3&page=1",
     "items": [],
     "net_lean": null
   },
@@ -276,14 +276,14 @@
       "symbol": "ES",
       "name": "S&P 500 (E-mini)",
       "type": "index",
-      "technical": -0.274,
+      "technical": -0.273,
       "macro": 0.228,
       "macro_weight": 0.4,
       "composite": -0.073,
       "bias": "Neutral",
       "drivers": {
         "trend": -0.391,
-        "day": 0.0,
+        "day": 0.002,
         "day_change_pct": 0.0,
         "spark": [
           7783.25,
@@ -295,19 +295,19 @@
           7383.0,
           7402.0,
           7574.25,
-          7574.25
+          7574.5
         ],
         "trend_components": {
-          "price_vs_ema20": -0.442,
+          "price_vs_ema20": -0.44,
           "ema20_vs_ema50": -0.252,
           "ema50_slope": -0.39,
           "rsi": -0.492
         },
         "_raw": {
-          "price": 7574.25,
+          "price": 7574.5,
           "prev_close": 7574.25,
-          "ema20": 7641.74,
-          "ema50": 7680.5,
+          "ema20": 7641.77,
+          "ema50": 7680.51,
           "rsi14": 40.2
         }
       }
@@ -316,14 +316,14 @@
       "symbol": "NQ",
       "name": "Nasdaq-100 (E-mini)",
       "type": "index",
-      "technical": -0.733,
+      "technical": -0.734,
       "macro": 0.228,
       "macro_weight": 0.4,
       "composite": -0.349,
       "bias": "Bearish",
       "drivers": {
         "trend": -0.945,
-        "day": -0.239,
+        "day": -0.242,
         "day_change_pct": -0.36,
         "spark": [
           29979.5,
@@ -335,7 +335,7 @@
           26752.0,
           27085.25,
           28014.5,
-          27914.0
+          27912.75
         ],
         "trend_components": {
           "price_vs_ema20": -1.0,
@@ -344,10 +344,10 @@
           "rsi": -0.725
         },
         "_raw": {
-          "price": 27914.0,
+          "price": 27912.75,
           "prev_close": 28014.5,
-          "ema20": 28800.38,
-          "ema50": 29400.71,
+          "ema20": 28800.27,
+          "ema50": 29400.66,
           "rsi14": 35.5
         }
       }
@@ -356,15 +356,15 @@
       "symbol": "YM",
       "name": "Dow (E-mini)",
       "type": "index",
-      "technical": 0.106,
+      "technical": 0.107,
       "macro": 0.228,
       "macro_weight": 0.4,
       "composite": 0.155,
       "bias": "Neutral",
       "drivers": {
-        "trend": 0.065,
-        "day": 0.201,
-        "day_change_pct": 0.3,
+        "trend": 0.066,
+        "day": 0.204,
+        "day_change_pct": 0.31,
         "spark": [
           52696.0,
           52512.0,
@@ -375,19 +375,19 @@
           51615.0,
           51385.0,
           52498.0,
-          52656.0
+          52659.0
         ],
         "trend_components": {
-          "price_vs_ema20": 0.351,
+          "price_vs_ema20": 0.353,
           "ema20_vs_ema50": -0.025,
           "ema50_slope": -0.025,
-          "rsi": -0.14
+          "rsi": -0.139
         },
         "_raw": {
-          "price": 52656.0,
+          "price": 52659.0,
           "prev_close": 52498.0,
-          "ema20": 52289.15,
-          "ema50": 52315.61,
+          "ema20": 52289.44,
+          "ema50": 52315.73,
           "rsi14": 47.2
         }
       }
@@ -396,15 +396,15 @@
       "symbol": "RTY",
       "name": "Russell 2000 (E-mini)",
       "type": "index",
-      "technical": 0.021,
+      "technical": 0.011,
       "macro": 0.228,
       "macro_weight": 0.4,
-      "composite": 0.104,
+      "composite": 0.098,
       "bias": "Neutral",
       "drivers": {
-        "trend": 0.027,
-        "day": 0.009,
-        "day_change_pct": 0.01,
+        "trend": 0.021,
+        "day": -0.012,
+        "day_change_pct": -0.02,
         "spark": [
           2839.5,
           2867.3,
@@ -415,20 +415,20 @@
           2735.4,
           2760.5,
           2848.7,
-          2849.1
+          2848.2
         ],
         "trend_components": {
-          "price_vs_ema20": 0.576,
-          "ema20_vs_ema50": -0.543,
+          "price_vs_ema20": 0.562,
+          "ema20_vs_ema50": -0.544,
           "ema50_slope": -0.293,
-          "rsi": 0.313
+          "rsi": 0.308
         },
         "_raw": {
-          "price": 2849.1,
+          "price": 2848.2,
           "prev_close": 2848.7,
-          "ema20": 2816.63,
-          "ema50": 2847.56,
-          "rsi14": 56.3
+          "ema20": 2816.55,
+          "ema50": 2847.52,
+          "rsi14": 56.2
         }
       }
     },
@@ -956,15 +956,15 @@
       "symbol": "BTC",
       "name": "Bitcoin",
       "type": "crypto",
-      "technical": -0.955,
+      "technical": -0.904,
       "macro": 0.228,
       "macro_weight": 0.2,
-      "composite": -0.718,
+      "composite": -0.678,
       "bias": "Bearish",
       "drivers": {
-        "trend": -0.94,
-        "day": -0.99,
-        "day_change_pct": -1.48,
+        "trend": -0.935,
+        "day": -0.83,
+        "day_change_pct": -1.24,
         "spark": [
           78248.45,
           76677.3,
@@ -975,20 +975,20 @@
           75747.58,
           74584.65,
           75223.15,
-          74106.1
+          74286.73
         ],
         "trend_components": {
           "price_vs_ema20": -1.0,
-          "ema20_vs_ema50": -0.835,
+          "ema20_vs_ema50": -0.829,
           "ema50_slope": -1.0,
-          "rsi": -0.907
+          "rsi": -0.892
         },
         "_raw": {
-          "price": 74106.1,
+          "price": 74286.73,
           "prev_close": 75223.15,
-          "ema20": 77706.41,
-          "ema50": 79026.2,
-          "rsi14": 31.9
+          "ema20": 77723.61,
+          "ema50": 79033.28,
+          "rsi14": 32.2
         }
       }
     },
@@ -996,15 +996,15 @@
       "symbol": "DAX",
       "name": "DAX \u00b7 Germany",
       "type": "intl",
-      "technical": 0.685,
+      "technical": 0.727,
       "macro": 0.228,
       "macro_weight": 0.4,
-      "composite": 0.502,
+      "composite": 0.527,
       "bias": "Bullish",
       "drivers": {
-        "trend": 0.655,
-        "day": 0.757,
-        "day_change_pct": 1.13,
+        "trend": 0.662,
+        "day": 0.878,
+        "day_change_pct": 1.32,
         "spark": [
           25704.02,
           26039.68,
@@ -1015,20 +1015,20 @@
           26325.01,
           25820.36,
           26267.19,
-          26565.31
+          26613.13
         ],
         "trend_components": {
           "price_vs_ema20": 1.0,
-          "ema20_vs_ema50": 0.37,
-          "ema50_slope": 0.56,
-          "rsi": 0.612
+          "ema20_vs_ema50": 0.375,
+          "ema50_slope": 0.565,
+          "rsi": 0.636
         },
         "_raw": {
-          "price": 26565.31,
+          "price": 26613.13,
           "prev_close": 26267.19,
-          "ema20": 25859.25,
-          "ema50": 25669.38,
-          "rsi14": 62.2
+          "ema20": 25863.81,
+          "ema50": 25671.26,
+          "rsi14": 62.7
         }
       }
     },
@@ -1076,15 +1076,15 @@
       "symbol": "FTSE",
       "name": "FTSE \u00b7 UK",
       "type": "intl",
-      "technical": 0.229,
+      "technical": 0.243,
       "macro": 0.228,
       "macro_weight": 0.4,
-      "composite": 0.229,
+      "composite": 0.237,
       "bias": "Neutral",
       "drivers": {
-        "trend": 0.226,
-        "day": 0.235,
-        "day_change_pct": 0.35,
+        "trend": 0.235,
+        "day": 0.264,
+        "day_change_pct": 0.4,
         "spark": [
           10694.5,
           10722.1,
@@ -1095,20 +1095,20 @@
           10782.7,
           10673.9,
           10782.9,
-          10820.92
+          10825.55
         ],
         "trend_components": {
-          "price_vs_ema20": 0.421,
-          "ema20_vs_ema50": 0.121,
-          "ema50_slope": 0.129,
-          "rsi": 0.187
+          "price_vs_ema20": 0.44,
+          "ema20_vs_ema50": 0.122,
+          "ema50_slope": 0.13,
+          "rsi": 0.198
         },
         "_raw": {
-          "price": 10820.92,
+          "price": 10825.55,
           "prev_close": 10782.9,
-          "ema20": 10730.6,
-          "ema50": 10704.71,
-          "rsi14": 53.7
+          "ema20": 10731.05,
+          "ema50": 10704.89,
+          "rsi14": 54.0
         }
       }
     }
