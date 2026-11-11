@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-11-11T14:01:24.077454+00:00",
+  "generated_at": "2026-11-11T14:15:37.891205+00:00",
   "sentiment": {
-    "score": 0.188,
+    "score": 0.137,
     "label": "Risk-On",
     "lean": "long",
     "conviction": "Moderate",
     "agree": 3,
-    "total": 5,
+    "total": 6,
     "layers": [
       {
         "name": "price",
-        "score": 0.007,
+        "score": 0.009,
         "agrees": false
       },
       {
@@ -47,6 +47,11 @@
         "name": "credit",
         "score": 1.0,
         "agrees": true
+      },
+      {
+        "name": "news",
+        "score": -0.601,
+        "agrees": false
       }
     ],
     "exposure": "Benefits most: NQ and RTY (high beta lead the way up). YM lags. For your MNQ vs MES: MNQ has more upside \u2014 but also more whip."
@@ -58,7 +63,8 @@
     "driver": "Biggest driver right now: the rates trend (10-yr yield) \u2014 the main support.",
     "conflict": "Heads-up: the macro backdrop leans long but mega-cap tech leans short \u2014 they disagree, so conviction is lower. Wait for them to align.",
     "calendar_note": null,
-    "sector_note": null
+    "sector_note": null,
+    "news_note": "Watch the tape: geopolitical/war headlines are leaning risk-off right now \u2014 volatility can spike on a single update."
   },
   "macro": {
     "enabled": true,
@@ -170,13 +176,13 @@
       {
         "symbol": "DX-Y.NYB",
         "name": "US Dollar",
-        "day_pct": 0.49,
+        "day_pct": 0.6,
         "signal": "risk-off"
       },
       {
         "symbol": "GC=F",
         "name": "Gold",
-        "day_pct": 0.31,
+        "day_pct": 0.21,
         "signal": "risk-off"
       },
       {
@@ -188,13 +194,13 @@
       {
         "symbol": "^VIX",
         "name": "VIX (fear)",
-        "day_pct": -5.6,
+        "day_pct": -6.12,
         "signal": "risk-on"
       },
       {
         "symbol": "CL=F",
         "name": "Crude Oil",
-        "day_pct": 1.51,
+        "day_pct": 1.36,
         "signal": "growth"
       }
     ],
@@ -239,36 +245,98 @@
         "prior_low": 7493.0,
         "prior_close": 7544.75,
         "overnight_high": 7620.0,
-        "overnight_low": 7548.75,
+        "overnight_low": 7548.0,
         "open": null,
-        "last": 7614.75,
+        "last": 7616.0,
         "gap_pts": null,
         "gap_pct": null,
         "open_location": null,
         "vwap": null,
-        "note": "ES: overnight range 7548.75-7620.0 so far; RTH hasn't opened yet, so the gap and open-location read fills in once the 9:30 bell sets the day's tone."
+        "note": "ES: overnight range 7548.0-7620.0 so far; RTH hasn't opened yet, so the gap and open-location read fills in once the 9:30 bell sets the day's tone."
       },
       "NQ": {
         "prior_high": 28090.0,
         "prior_low": 27516.0,
-        "prior_close": 27835.75,
+        "prior_close": 27835.25,
         "overnight_high": 28406.25,
-        "overnight_low": 27847.75,
+        "overnight_low": 27847.5,
         "open": null,
-        "last": 28354.25,
+        "last": 28358.75,
         "gap_pts": null,
         "gap_pct": null,
         "open_location": null,
         "vwap": null,
-        "note": "NQ: overnight range 27847.75-28406.25 so far; RTH hasn't opened yet, so the gap and open-location read fills in once the 9:30 bell sets the day's tone."
+        "note": "NQ: overnight range 27847.5-28406.25 so far; RTH hasn't opened yet, so the gap and open-location read fills in once the 9:30 bell sets the day's tone."
       }
     }
   },
   "news": {
-    "enabled": false,
-    "note": "fetch failed: HTTPSConnectionPool(host='api.marketaux.com', port=443): Read timed out. (read timeout=20)",
-    "items": [],
-    "net_lean": null
+    "enabled": true,
+    "items": [
+      {
+        "title": "Crude oil: A breather for India",
+        "source": "thehindubusinessline.com",
+        "published_at": "2026-11-10T15:10:37.000000Z",
+        "url": "https://www.thehindubusinessline.com/opinion/crude-oil-a-breather-for-india/article71686936.ece",
+        "category": "geopolitical",
+        "direction": "neutral",
+        "score": 0.0,
+        "why": ""
+      },
+      {
+        "title": "Futures Stall As Waller Threatens 50bps Hike Hours Before CPI; Brent Breaks Below $90",
+        "source": "zerohedge.com",
+        "published_at": "2026-11-10T13:23:48.000000Z",
+        "url": "https://www.zerohedge.com/markets/futures-stall-waller-threatens-50bps-hike-hours-cpi-brent-breaks-below-90",
+        "category": "monetary",
+        "direction": "risk-off",
+        "score": -0.333,
+        "why": ""
+      },
+      {
+        "title": "Oil falls as Trump downplays prospect of Iran escalation",
+        "source": "rte.ie",
+        "published_at": "2026-11-10T09:44:34.000000Z",
+        "url": "https://www.rte.ie/news/business/2026/1110/1598641-world-oil-prices/",
+        "category": "geopolitical",
+        "direction": "risk-off",
+        "score": -0.667,
+        "why": ""
+      },
+      {
+        "title": "Oil prices fall as Trump signals pause in military action against Iran",
+        "source": "business-standard.com",
+        "published_at": "2026-11-10T09:37:58.000000Z",
+        "url": "https://www.business-standard.com/markets/commodities/oil-prices-fall-as-trump-signals-pause-in-military-action-against-iran-126111000067_1.html",
+        "category": "geopolitical",
+        "direction": "risk-off",
+        "score": -1.0,
+        "why": ""
+      },
+      {
+        "title": "Trump says Iran war is 'effectively over': How the conflict unfolded",
+        "source": "business-standard.com",
+        "published_at": "2026-11-10T04:16:04.000000Z",
+        "url": "https://www.business-standard.com/world-news/trump-says-iran-war-is-effectively-over-how-the-conflict-unfolded-126111000144_1.html",
+        "category": "geopolitical",
+        "direction": "risk-off",
+        "score": -1.0,
+        "why": ""
+      },
+      {
+        "title": "A price tag",
+        "source": "business-standard.com",
+        "published_at": "2026-11-09T22:50:58.000000Z",
+        "url": "https://www.business-standard.com/blueprint-defence-magazine/reports/a-price-tag-126110700077_1.html",
+        "category": "geopolitical",
+        "direction": "risk-off",
+        "score": -1.0,
+        "why": ""
+      }
+    ],
+    "net_lean": -0.601,
+    "mode": "keyword",
+    "_fetched_at": "2026-11-11T14:15:37.891101+00:00"
   },
   "megacap_breadth": -0.192,
   "instruments": [
@@ -276,15 +344,15 @@
       "symbol": "ES",
       "name": "S&P 500 (E-mini)",
       "type": "index",
-      "technical": 0.005,
+      "technical": 0.013,
       "macro": 0.356,
       "macro_weight": 0.4,
-      "composite": 0.145,
+      "composite": 0.15,
       "bias": "Neutral",
       "drivers": {
-        "trend": -0.258,
-        "day": 0.621,
-        "day_change_pct": 0.93,
+        "trend": -0.254,
+        "day": 0.636,
+        "day_change_pct": 0.95,
         "spark": [
           7754.25,
           7614.0,
@@ -295,20 +363,20 @@
           7402.0,
           7574.25,
           7544.25,
-          7614.5
+          7616.25
         ],
         "trend_components": {
-          "price_vs_ema20": -0.144,
-          "ema20_vs_ema50": -0.262,
+          "price_vs_ema20": -0.134,
+          "ema20_vs_ema50": -0.261,
           "ema50_slope": -0.441,
-          "rsi": -0.195
+          "rsi": -0.191
         },
         "_raw": {
-          "price": 7614.5,
+          "price": 7616.25,
           "prev_close": 7544.25,
-          "ema20": 7636.56,
-          "ema50": 7676.78,
-          "rsi14": 46.1
+          "ema20": 7636.73,
+          "ema50": 7676.85,
+          "rsi14": 46.2
         }
       }
     },
@@ -316,15 +384,15 @@
       "symbol": "NQ",
       "name": "Nasdaq-100 (E-mini)",
       "type": "index",
-      "technical": -0.236,
+      "technical": -0.232,
       "macro": 0.356,
       "macro_weight": 0.4,
-      "composite": 0.001,
+      "composite": 0.003,
       "bias": "Neutral",
       "drivers": {
-        "trend": -0.766,
+        "trend": -0.76,
         "day": 1.0,
-        "day_change_pct": 1.85,
+        "day_change_pct": 1.89,
         "spark": [
           29562.0,
           28534.0,
@@ -335,20 +403,20 @@
           27085.25,
           28014.5,
           27835.25,
-          28350.0
+          28360.75
         ],
         "trend_components": {
-          "price_vs_ema20": -0.697,
+          "price_vs_ema20": -0.68,
           "ema20_vs_ema50": -1.0,
           "ema50_slope": -1.0,
-          "rsi": -0.285
+          "rsi": -0.281
         },
         "_raw": {
-          "price": 28350.0,
+          "price": 28360.75,
           "prev_close": 27835.25,
-          "ema20": 28750.71,
-          "ema50": 29356.54,
-          "rsi14": 44.3
+          "ema20": 28751.73,
+          "ema50": 29356.96,
+          "rsi14": 44.4
         }
       }
     },
@@ -356,15 +424,15 @@
       "symbol": "YM",
       "name": "Dow (E-mini)",
       "type": "index",
-      "technical": 0.045,
+      "technical": 0.043,
       "macro": 0.356,
       "macro_weight": 0.4,
-      "composite": 0.169,
+      "composite": 0.168,
       "bias": "Neutral",
       "drivers": {
-        "trend": -0.011,
-        "day": 0.177,
-        "day_change_pct": 0.27,
+        "trend": -0.012,
+        "day": 0.173,
+        "day_change_pct": 0.26,
         "spark": [
           52512.0,
           51918.0,
@@ -375,19 +443,19 @@
           51385.0,
           52498.0,
           52315.0,
-          52454.0
+          52451.0
         ],
         "trend_components": {
-          "price_vs_ema20": 0.171,
+          "price_vs_ema20": 0.168,
           "ema20_vs_ema50": -0.031,
           "ema50_slope": -0.052,
-          "rsi": -0.208
+          "rsi": -0.209
         },
         "_raw": {
-          "price": 52454.0,
+          "price": 52451.0,
           "prev_close": 52315.0,
-          "ema20": 52275.47,
-          "ema50": 52308.19,
+          "ema20": 52275.19,
+          "ema50": 52308.07,
           "rsi14": 45.8
         }
       }
@@ -396,15 +464,15 @@
       "symbol": "RTY",
       "name": "Russell 2000 (E-mini)",
       "type": "index",
-      "technical": 0.214,
+      "technical": 0.212,
       "macro": 0.356,
       "macro_weight": 0.4,
-      "composite": 0.271,
+      "composite": 0.27,
       "bias": "Neutral",
       "drivers": {
-        "trend": 0.052,
-        "day": 0.592,
-        "day_change_pct": 0.89,
+        "trend": 0.051,
+        "day": 0.587,
+        "day_change_pct": 0.88,
         "spark": [
           2867.3,
           2821.3,
@@ -415,19 +483,19 @@
           2760.5,
           2848.7,
           2828.9,
-          2854.0
+          2853.8
         ],
         "trend_components": {
-          "price_vs_ema20": 0.631,
+          "price_vs_ema20": 0.627,
           "ema20_vs_ema50": -0.502,
           "ema50_slope": -0.286,
-          "rsi": 0.301
+          "rsi": 0.3
         },
         "_raw": {
-          "price": 2854.0,
+          "price": 2853.8,
           "prev_close": 2828.9,
-          "ema20": 2818.45,
-          "ema50": 2847.05,
+          "ema20": 2818.43,
+          "ema50": 2847.04,
           "rsi14": 56.0
         }
       }
@@ -956,15 +1024,15 @@
       "symbol": "BTC",
       "name": "Bitcoin",
       "type": "crypto",
-      "technical": -0.681,
+      "technical": -0.725,
       "macro": 0.356,
       "macro_weight": 0.2,
-      "composite": -0.474,
+      "composite": -0.509,
       "bias": "Bearish",
       "drivers": {
-        "trend": -0.989,
-        "day": 0.038,
-        "day_change_pct": 0.06,
+        "trend": -0.991,
+        "day": -0.104,
+        "day_change_pct": -0.16,
         "spark": [
           76677.3,
           77345.05,
@@ -975,20 +1043,20 @@
           74584.65,
           75223.15,
           73720.12,
-          73761.73
+          73605.31
         ],
         "trend_components": {
           "price_vs_ema20": -1.0,
-          "ema20_vs_ema50": -0.956,
+          "ema20_vs_ema50": -0.962,
           "ema50_slope": -1.0,
           "rsi": -1.0
         },
         "_raw": {
-          "price": 73761.73,
+          "price": 73605.31,
           "prev_close": 73720.12,
-          "ema20": 77297.46,
-          "ema50": 78804.95,
-          "rsi14": 29.6
+          "ema20": 77282.57,
+          "ema50": 78798.82,
+          "rsi14": 29.3
         }
       }
     },
@@ -996,15 +1064,15 @@
       "symbol": "DAX",
       "name": "DAX \u00b7 Germany",
       "type": "intl",
-      "technical": 0.656,
+      "technical": 0.675,
       "macro": 0.356,
       "macro_weight": 0.4,
-      "composite": 0.536,
+      "composite": 0.547,
       "bias": "Bullish",
       "drivers": {
-        "trend": 0.722,
-        "day": 0.502,
-        "day_change_pct": 0.75,
+        "trend": 0.726,
+        "day": 0.558,
+        "day_change_pct": 0.84,
         "spark": [
           26039.68,
           25818.21,
@@ -1015,20 +1083,20 @@
           25820.36,
           26267.19,
           26347.45,
-          26545.82
+          26568.05
         ],
         "trend_components": {
           "price_vs_ema20": 1.0,
-          "ema20_vs_ema50": 0.409,
-          "ema50_slope": 0.603,
-          "rsi": 0.847
+          "ema20_vs_ema50": 0.412,
+          "ema50_slope": 0.605,
+          "rsi": 0.858
         },
         "_raw": {
-          "price": 26545.82,
+          "price": 26568.05,
           "prev_close": 26347.45,
-          "ema20": 25905.87,
-          "ema50": 25695.54,
-          "rsi14": 66.9
+          "ema20": 25907.99,
+          "ema50": 25696.42,
+          "rsi14": 67.2
         }
       }
     },
@@ -1076,15 +1144,15 @@
       "symbol": "FTSE",
       "name": "FTSE \u00b7 UK",
       "type": "intl",
-      "technical": 0.218,
+      "technical": 0.27,
       "macro": 0.356,
       "macro_weight": 0.4,
-      "composite": 0.273,
+      "composite": 0.304,
       "bias": "Neutral",
       "drivers": {
-        "trend": 0.193,
-        "day": 0.277,
-        "day_change_pct": 0.42,
+        "trend": 0.223,
+        "day": 0.378,
+        "day_change_pct": 0.57,
         "spark": [
           10722.1,
           10729.8,
@@ -1095,20 +1163,20 @@
           10673.9,
           10782.9,
           10751.6,
-          10796.28
+          10812.54
         ],
         "trend_components": {
-          "price_vs_ema20": 0.305,
-          "ema20_vs_ema50": 0.118,
-          "ema50_slope": 0.132,
-          "rsi": 0.193
+          "price_vs_ema20": 0.373,
+          "ema20_vs_ema50": 0.122,
+          "ema50_slope": 0.136,
+          "rsi": 0.233
         },
         "_raw": {
-          "price": 10796.28,
+          "price": 10812.54,
           "prev_close": 10751.6,
-          "ema20": 10730.89,
-          "ema50": 10705.68,
-          "rsi14": 53.9
+          "ema20": 10732.43,
+          "ema50": 10706.32,
+          "rsi14": 54.7
         }
       }
     }
